@@ -1,0 +1,295 @@
+2012-01-24 19:25:47 Error: [MissingViewException] View file "/Applications/MAMP/htdocs/epWebShop/app/View/Posts/delete.ctp" is missing.
+#0 /Applications/MAMP/htdocs/epWebShop/lib/Cake/View/View.php(360): View->_getViewFileName(NULL)
+#1 /Applications/MAMP/htdocs/epWebShop/lib/Cake/Controller/Controller.php(900): View->render(NULL, NULL)
+#2 /Applications/MAMP/htdocs/epWebShop/lib/Cake/Routing/Dispatcher.php(111): Controller->render()
+#3 /Applications/MAMP/htdocs/epWebShop/lib/Cake/Routing/Dispatcher.php(86): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#4 /Applications/MAMP/htdocs/epWebShop/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-01-24 19:27:09 Error: [MissingViewException] View file "/Applications/MAMP/htdocs/epWebShop/app/View/Posts/view.ctp" is missing.
+#0 /Applications/MAMP/htdocs/epWebShop/lib/Cake/View/View.php(360): View->_getViewFileName(NULL)
+#1 /Applications/MAMP/htdocs/epWebShop/lib/Cake/Controller/Controller.php(900): View->render(NULL, NULL)
+#2 /Applications/MAMP/htdocs/epWebShop/lib/Cake/Routing/Dispatcher.php(111): Controller->render()
+#3 /Applications/MAMP/htdocs/epWebShop/lib/Cake/Routing/Dispatcher.php(86): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#4 /Applications/MAMP/htdocs/epWebShop/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-01-26 18:45:57 Error: [MissingControllerException] Controller class AdmController could not be found.
+#0 /projects/cakeshop/src/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-01-26 18:46:07 Error: [MissingControllerException] Controller class Adm.dController could not be found.
+#0 /projects/cakeshop/src/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-02-02 17:57:53 Error: [MissingActionException] Action UsersController::login() could not be found.
+#0 /projects/cakeshop/src/lib/Cake/Routing/Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#1 /projects/cakeshop/src/lib/Cake/Routing/Dispatcher.php(86): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /projects/cakeshop/src/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-02-02 17:57:53 Error: [MissingActionException] Action UsersController::login() could not be found.
+#0 /projects/cakeshop/src/lib/Cake/Routing/Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#1 /projects/cakeshop/src/lib/Cake/Routing/Dispatcher.php(86): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /projects/cakeshop/src/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-02-02 17:57:53 Error: [MissingActionException] Action UsersController::login() could not be found.
+#0 /projects/cakeshop/src/lib/Cake/Routing/Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#1 /projects/cakeshop/src/lib/Cake/Routing/Dispatcher.php(86): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /projects/cakeshop/src/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-02-02 17:59:31 Error: [MissingActionException] Action UsersController::adm_favicon.ico() could not be found.
+#0 /projects/cakeshop/src/lib/Cake/Routing/Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#1 /projects/cakeshop/src/lib/Cake/Routing/Dispatcher.php(86): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /projects/cakeshop/src/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-02-02 17:59:31 Error: [MissingActionException] Action UsersController::adm_favicon.ico() could not be found.
+#0 /projects/cakeshop/src/lib/Cake/Routing/Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#1 /projects/cakeshop/src/lib/Cake/Routing/Dispatcher.php(86): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /projects/cakeshop/src/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-02-02 18:01:24 Error: [MissingControllerException] Controller class Favicon.icoController could not be found.
+#0 /projects/cakeshop/src/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-02-02 18:01:24 Error: [MissingControllerException] Controller class Favicon.icoController could not be found.
+#0 /projects/cakeshop/src/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-02-02 18:15:12 Error: [MissingActionException] Action UsersController::adm_favicon.ico() could not be found.
+#0 /projects/cakeshop/src/lib/Cake/Routing/Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#1 /projects/cakeshop/src/lib/Cake/Routing/Dispatcher.php(86): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /projects/cakeshop/src/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-02-02 18:15:12 Error: [MissingActionException] Action UsersController::adm_favicon.ico() could not be found.
+#0 /projects/cakeshop/src/lib/Cake/Routing/Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#1 /projects/cakeshop/src/lib/Cake/Routing/Dispatcher.php(86): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /projects/cakeshop/src/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-02-02 18:16:59 Error: [NotFoundException] Invalid user
+#0 [internal function]: UsersController->adm_edit('favicon.ico')
+#1 /projects/cakeshop/src/lib/Cake/Controller/Controller.php(473): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /projects/cakeshop/src/lib/Cake/Routing/Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#3 /projects/cakeshop/src/lib/Cake/Routing/Dispatcher.php(86): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /projects/cakeshop/src/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-02-02 18:17:00 Error: [NotFoundException] Invalid user
+#0 [internal function]: UsersController->adm_edit('favicon.ico')
+#1 /projects/cakeshop/src/lib/Cake/Controller/Controller.php(473): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /projects/cakeshop/src/lib/Cake/Routing/Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#3 /projects/cakeshop/src/lib/Cake/Routing/Dispatcher.php(86): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /projects/cakeshop/src/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-02-02 18:17:18 Error: [MissingControllerException] Controller class Favicon.icoController could not be found.
+#0 /projects/cakeshop/src/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-02-02 18:17:18 Error: [MissingControllerException] Controller class Favicon.icoController could not be found.
+#0 /projects/cakeshop/src/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-02-02 18:24:25 Error: [MissingActionException] Action UsersController::adm_1() could not be found.
+#0 /projects/cakeshop/src/lib/Cake/Routing/Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#1 /projects/cakeshop/src/lib/Cake/Routing/Dispatcher.php(86): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /projects/cakeshop/src/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-02-02 18:31:27 Error: [MissingViewException] View file "/projects/cakeshop/src/app/View/users/adm_index.ctp" is missing.
+#0 /projects/cakeshop/src/lib/Cake/View/View.php(360): View->_getViewFileName('/users/adm_inde...')
+#1 /projects/cakeshop/src/lib/Cake/Controller/Controller.php(900): View->render('/users/adm_inde...', NULL)
+#2 /projects/cakeshop/src/app/Controller/UsersController.php(27): Controller->render('/users/adm_inde...')
+#3 [internal function]: UsersController->adm_clients_index()
+#4 /projects/cakeshop/src/lib/Cake/Controller/Controller.php(473): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#5 /projects/cakeshop/src/lib/Cake/Routing/Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#6 /projects/cakeshop/src/lib/Cake/Routing/Dispatcher.php(86): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#7 /projects/cakeshop/src/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2012-02-02 18:35:31 Error: [MissingViewException] View file "/projects/cakeshop/src/app/View/Users/adm_clients_index.ctp" is missing.
+#0 /projects/cakeshop/src/lib/Cake/View/View.php(360): View->_getViewFileName(NULL)
+#1 /projects/cakeshop/src/lib/Cake/Controller/Controller.php(900): View->render(NULL, NULL)
+#2 /projects/cakeshop/src/lib/Cake/Routing/Dispatcher.php(111): Controller->render()
+#3 /projects/cakeshop/src/lib/Cake/Routing/Dispatcher.php(86): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /projects/cakeshop/src/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-02-02 18:36:12 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'paginate' at line 1
+#0 /projects/cakeshop/src/lib/Cake/Model/Datasource/DboSource.php(436): PDOStatement->execute(Array)
+#1 /projects/cakeshop/src/lib/Cake/Model/Datasource/DboSource.php(403): DboSource->_execute('paginate', Array)
+#2 /projects/cakeshop/src/lib/Cake/Model/Datasource/DboSource.php(647): DboSource->execute('paginate', Array, Array)
+#3 /projects/cakeshop/src/lib/Cake/Model/Datasource/DboSource.php(589): DboSource->fetchAll('paginate', Array, Array)
+#4 /projects/cakeshop/src/lib/Cake/Model/Model.php(720): DboSource->query('paginate', Array, Object(User))
+#5 /projects/cakeshop/src/app/Controller/UsersController.php(19): Model->__call('paginate', Array)
+#6 /projects/cakeshop/src/app/Controller/UsersController.php(19): User->paginate()
+#7 [internal function]: UsersController->adm_index()
+#8 /projects/cakeshop/src/lib/Cake/Controller/Controller.php(473): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 /projects/cakeshop/src/lib/Cake/Routing/Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#10 /projects/cakeshop/src/lib/Cake/Routing/Dispatcher.php(86): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /projects/cakeshop/src/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-02-02 18:38:57 Error: [MissingActionException] Action HomeController::adm_index() could not be found.
+#0 /projects/cakeshop/src/lib/Cake/Routing/Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#1 /projects/cakeshop/src/lib/Cake/Routing/Dispatcher.php(86): Dispatcher->_invoke(Object(HomeController), Object(CakeRequest), Object(CakeResponse))
+#2 /projects/cakeshop/src/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-02-02 18:39:33 Error: [MissingActionException] Action HomeController::adm_index() could not be found.
+#0 /projects/cakeshop/src/lib/Cake/Routing/Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#1 /projects/cakeshop/src/lib/Cake/Routing/Dispatcher.php(86): Dispatcher->_invoke(Object(HomeController), Object(CakeRequest), Object(CakeResponse))
+#2 /projects/cakeshop/src/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-02-02 18:40:22 Error: [MissingActionException] Action HomeController::adm_index() could not be found.
+#0 /projects/cakeshop/src/lib/Cake/Routing/Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#1 /projects/cakeshop/src/lib/Cake/Routing/Dispatcher.php(86): Dispatcher->_invoke(Object(HomeController), Object(CakeRequest), Object(CakeResponse))
+#2 /projects/cakeshop/src/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-02-02 19:36:29 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Post.user_id' in 'on clause'
+#0 /projects/cakeshop/src/lib/Cake/Model/Datasource/DboSource.php(436): PDOStatement->execute(Array)
+#1 /projects/cakeshop/src/lib/Cake/Model/Datasource/DboSource.php(403): DboSource->_execute('SELECT `User`.`...', Array)
+#2 /projects/cakeshop/src/lib/Cake/Model/Datasource/DboSource.php(647): DboSource->execute('SELECT `User`.`...', Array, Array)
+#3 /projects/cakeshop/src/lib/Cake/Model/Datasource/DboSource.php(1040): DboSource->fetchAll('SELECT `User`.`...', false)
+#4 /projects/cakeshop/src/lib/Cake/Model/Model.php(2483): DboSource->read(Object(User), Array)
+#5 /projects/cakeshop/src/app/Controller/UsersController.php(25): Model->find('all', Array)
+#6 [internal function]: UsersController->adm_clients_index()
+#7 /projects/cakeshop/src/lib/Cake/Controller/Controller.php(473): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#8 /projects/cakeshop/src/lib/Cake/Routing/Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#9 /projects/cakeshop/src/lib/Cake/Routing/Dispatcher.php(86): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#10 /projects/cakeshop/src/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2012-02-02 19:36:52 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Post.user_id' in 'on clause'
+#0 /projects/cakeshop/src/lib/Cake/Model/Datasource/DboSource.php(436): PDOStatement->execute(Array)
+#1 /projects/cakeshop/src/lib/Cake/Model/Datasource/DboSource.php(403): DboSource->_execute('SELECT `User`.`...', Array)
+#2 /projects/cakeshop/src/lib/Cake/Model/Datasource/DboSource.php(647): DboSource->execute('SELECT `User`.`...', Array, Array)
+#3 /projects/cakeshop/src/lib/Cake/Model/Datasource/DboSource.php(1040): DboSource->fetchAll('SELECT `User`.`...', false)
+#4 /projects/cakeshop/src/lib/Cake/Model/Model.php(2483): DboSource->read(Object(User), Array)
+#5 /projects/cakeshop/src/app/Controller/UsersController.php(25): Model->find('all', Array)
+#6 [internal function]: UsersController->adm_clients_index()
+#7 /projects/cakeshop/src/lib/Cake/Controller/Controller.php(473): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#8 /projects/cakeshop/src/lib/Cake/Routing/Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#9 /projects/cakeshop/src/lib/Cake/Routing/Dispatcher.php(86): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#10 /projects/cakeshop/src/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2012-02-02 19:37:48 Error: [MissingTableException] Database table us for model Users was not found.
+#0 /projects/cakeshop/src/lib/Cake/Model/Model.php(3258): Model->setSource('us')
+#1 /projects/cakeshop/src/lib/Cake/Model/Datasource/DboSource.php(1026): Model->getDataSource()
+#2 /projects/cakeshop/src/lib/Cake/Model/Model.php(2483): DboSource->read(Object(Post), Array)
+#3 /projects/cakeshop/src/app/Controller/UsersController.php(69): Model->find()
+#4 [internal function]: UsersController->adm_edit('3')
+#5 /projects/cakeshop/src/lib/Cake/Controller/Controller.php(473): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#6 /projects/cakeshop/src/lib/Cake/Routing/Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#7 /projects/cakeshop/src/lib/Cake/Routing/Dispatcher.php(86): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#8 /projects/cakeshop/src/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2012-02-02 19:38:41 Error: [MissingTableException] Database table us for model MyUser was not found.
+#0 /projects/cakeshop/src/lib/Cake/Model/Model.php(3258): Model->setSource('us')
+#1 /projects/cakeshop/src/lib/Cake/Model/Datasource/DboSource.php(1026): Model->getDataSource()
+#2 /projects/cakeshop/src/lib/Cake/Model/Model.php(2483): DboSource->read(Object(Post), Array)
+#3 /projects/cakeshop/src/app/Controller/UsersController.php(69): Model->find()
+#4 [internal function]: UsersController->adm_edit('3')
+#5 /projects/cakeshop/src/lib/Cake/Controller/Controller.php(473): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#6 /projects/cakeshop/src/lib/Cake/Routing/Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#7 /projects/cakeshop/src/lib/Cake/Routing/Dispatcher.php(86): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#8 /projects/cakeshop/src/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2012-02-02 19:38:58 Error: [MissingTableException] Database table us for model MyUser was not found.
+#0 /projects/cakeshop/src/lib/Cake/Model/Model.php(3258): Model->setSource('us')
+#1 /projects/cakeshop/src/lib/Cake/Model/Datasource/DboSource.php(1026): Model->getDataSource()
+#2 /projects/cakeshop/src/lib/Cake/Model/Model.php(2483): DboSource->read(Object(Post), Array)
+#3 /projects/cakeshop/src/app/Controller/UsersController.php(69): Model->find()
+#4 [internal function]: UsersController->adm_edit('3')
+#5 /projects/cakeshop/src/lib/Cake/Controller/Controller.php(473): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#6 /projects/cakeshop/src/lib/Cake/Routing/Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#7 /projects/cakeshop/src/lib/Cake/Routing/Dispatcher.php(86): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#8 /projects/cakeshop/src/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2012-02-02 19:38:59 Error: [MissingTableException] Database table us for model MyUser was not found.
+#0 /projects/cakeshop/src/lib/Cake/Model/Model.php(3258): Model->setSource('us')
+#1 /projects/cakeshop/src/lib/Cake/Model/Datasource/DboSource.php(1026): Model->getDataSource()
+#2 /projects/cakeshop/src/lib/Cake/Model/Model.php(2483): DboSource->read(Object(Post), Array)
+#3 /projects/cakeshop/src/app/Controller/UsersController.php(69): Model->find()
+#4 [internal function]: UsersController->adm_edit('3')
+#5 /projects/cakeshop/src/lib/Cake/Controller/Controller.php(473): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#6 /projects/cakeshop/src/lib/Cake/Routing/Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#7 /projects/cakeshop/src/lib/Cake/Routing/Dispatcher.php(86): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#8 /projects/cakeshop/src/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2012-02-02 20:00:58 Error: [MissingActionException] Action ItemsController::orders() could not be found.
+#0 /projects/cakeshop/src/lib/Cake/Routing/Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#1 /projects/cakeshop/src/lib/Cake/Routing/Dispatcher.php(86): Dispatcher->_invoke(Object(ItemsController), Object(CakeRequest), Object(CakeResponse))
+#2 /projects/cakeshop/src/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-02-02 20:00:59 Error: [MissingActionException] Action ItemsController::favicon.ico() could not be found.
+#0 /projects/cakeshop/src/lib/Cake/Routing/Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#1 /projects/cakeshop/src/lib/Cake/Routing/Dispatcher.php(86): Dispatcher->_invoke(Object(ItemsController), Object(CakeRequest), Object(CakeResponse))
+#2 /projects/cakeshop/src/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-02-02 20:00:59 Error: [MissingActionException] Action ItemsController::favicon.ico() could not be found.
+#0 /projects/cakeshop/src/lib/Cake/Routing/Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#1 /projects/cakeshop/src/lib/Cake/Routing/Dispatcher.php(86): Dispatcher->_invoke(Object(ItemsController), Object(CakeRequest), Object(CakeResponse))
+#2 /projects/cakeshop/src/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-02-02 20:12:29 Error: [MissingActionException] Action UsersController::favicon.ico() could not be found.
+#0 /projects/cakeshop/src/lib/Cake/Routing/Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#1 /projects/cakeshop/src/lib/Cake/Routing/Dispatcher.php(86): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /projects/cakeshop/src/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-02-02 20:12:30 Error: [MissingActionException] Action UsersController::favicon.ico() could not be found.
+#0 /projects/cakeshop/src/lib/Cake/Routing/Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#1 /projects/cakeshop/src/lib/Cake/Routing/Dispatcher.php(86): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /projects/cakeshop/src/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-02-02 20:19:59 Error: [NotFoundException] Invalid user
+#0 [internal function]: UsersController->edit('favicon.ico')
+#1 /projects/cakeshop/src/lib/Cake/Controller/Controller.php(473): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /projects/cakeshop/src/lib/Cake/Routing/Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#3 /projects/cakeshop/src/lib/Cake/Routing/Dispatcher.php(86): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /projects/cakeshop/src/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-02-02 20:19:59 Error: [NotFoundException] Invalid user
+#0 [internal function]: UsersController->edit('favicon.ico')
+#1 /projects/cakeshop/src/lib/Cake/Controller/Controller.php(473): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /projects/cakeshop/src/lib/Cake/Routing/Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#3 /projects/cakeshop/src/lib/Cake/Routing/Dispatcher.php(86): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /projects/cakeshop/src/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-02-02 20:31:00 Error: [MissingActionException] Action ItemsController::orders() could not be found.
+#0 /projects/cakeshop/src/lib/Cake/Routing/Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#1 /projects/cakeshop/src/lib/Cake/Routing/Dispatcher.php(86): Dispatcher->_invoke(Object(ItemsController), Object(CakeRequest), Object(CakeResponse))
+#2 /projects/cakeshop/src/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-02-02 20:31:15 Error: [MissingActionException] Action ItemsController::orders() could not be found.
+#0 /projects/cakeshop/src/lib/Cake/Routing/Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#1 /projects/cakeshop/src/lib/Cake/Routing/Dispatcher.php(86): Dispatcher->_invoke(Object(ItemsController), Object(CakeRequest), Object(CakeResponse))
+#2 /projects/cakeshop/src/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-02-02 20:35:52 Error: [MissingControllerException] Controller class TestadmController could not be found.
+#0 /projects/cakeshop/src/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-02-02 20:35:52 Error: [MissingControllerException] Controller class TestadmController could not be found.
+#0 /projects/cakeshop/src/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-02-02 20:35:53 Error: [MissingControllerException] Controller class TestadmController could not be found.
+#0 /projects/cakeshop/src/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-02-02 21:49:58 Error: [MissingActionException] Action CartController::addto() could not be found.
+#0 /projects/cakeshop/src/lib/Cake/Routing/Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#1 /projects/cakeshop/src/lib/Cake/Routing/Dispatcher.php(86): Dispatcher->_invoke(Object(CartController), Object(CakeRequest), Object(CakeResponse))
+#2 /projects/cakeshop/src/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-02-02 21:49:58 Error: [MissingActionException] Action CartController::addto() could not be found.
+#0 /projects/cakeshop/src/lib/Cake/Routing/Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#1 /projects/cakeshop/src/lib/Cake/Routing/Dispatcher.php(86): Dispatcher->_invoke(Object(CartController), Object(CakeRequest), Object(CakeResponse))
+#2 /projects/cakeshop/src/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-02-02 21:49:58 Error: [MissingActionException] Action CartController::addto() could not be found.
+#0 /projects/cakeshop/src/lib/Cake/Routing/Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#1 /projects/cakeshop/src/lib/Cake/Routing/Dispatcher.php(86): Dispatcher->_invoke(Object(CartController), Object(CakeRequest), Object(CakeResponse))
+#2 /projects/cakeshop/src/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-02-02 21:59:20 Error: [MissingActionException] Action ItemsController::view() could not be found.
+#0 /projects/cakeshop/src/lib/Cake/Routing/Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#1 /projects/cakeshop/src/lib/Cake/Routing/Dispatcher.php(86): Dispatcher->_invoke(Object(ItemsController), Object(CakeRequest), Object(CakeResponse))
+#2 /projects/cakeshop/src/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-02-02 21:59:20 Error: [MissingActionException] Action ItemsController::view() could not be found.
+#0 /projects/cakeshop/src/lib/Cake/Routing/Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#1 /projects/cakeshop/src/lib/Cake/Routing/Dispatcher.php(86): Dispatcher->_invoke(Object(ItemsController), Object(CakeRequest), Object(CakeResponse))
+#2 /projects/cakeshop/src/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-02-02 21:59:20 Error: [MissingActionException] Action ItemsController::view() could not be found.
+#0 /projects/cakeshop/src/lib/Cake/Routing/Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#1 /projects/cakeshop/src/lib/Cake/Routing/Dispatcher.php(86): Dispatcher->_invoke(Object(ItemsController), Object(CakeRequest), Object(CakeResponse))
+#2 /projects/cakeshop/src/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-02-02 21:59:24 Error: [MissingActionException] Action CartController::addto() could not be found.
+#0 /projects/cakeshop/src/lib/Cake/Routing/Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#1 /projects/cakeshop/src/lib/Cake/Routing/Dispatcher.php(86): Dispatcher->_invoke(Object(CartController), Object(CakeRequest), Object(CakeResponse))
+#2 /projects/cakeshop/src/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}

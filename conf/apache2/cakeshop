@@ -1,0 +1,21 @@
+<VirtualHost *:80>
+	ServerName www.cakeshop.com
+	ServerAdmin master@cakeshop.com
+	DocumentRoot /projects/cakeshop/src
+
+	<Directory /projects/cakeshop/src>
+		Options FollowSymLinks
+		AllowOverride All
+		Order allow,deny
+		allow from all
+	</Directory>
+
+	ErrorLog ${APACHE_LOG_DIR}/cakeshoperror.log
+
+	# Possible values include: debug, info, notice, warn, error, crit,
+	# alert, emerg.
+	LogLevel debug
+
+	CustomLog ${APACHE_LOG_DIR}/cakeshopaccess.log combined
+
+</VirtualHost>
