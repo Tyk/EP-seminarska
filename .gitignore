@@ -2,6 +2,7 @@ tmp/*
 config/database.php
 app/tmp/*
 app/config/database.php
+src/app/tmp/*
 !empty
 *~
 
