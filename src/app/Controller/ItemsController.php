@@ -1,7 +1,6 @@
 <?php
 class ItemsController extends AppController 
 {
-
 	var $paginate = array(
 		'limit' => 15,
 		'fields' => array('Item.id', 'Item.price','Item.name'),
@@ -12,19 +11,72 @@ class ItemsController extends AppController
 
     public function index() 
 	{
-		$items = $this->paginate('Item');
+	    $filters = array();
+	    if(isset($this->data['Item']['q']))
+		{
+			$q  = $this->data['Item']['q'];
+	        $filters = array("lower(Item.name) like '%".strtolower($q)."%' OR lower(Item.description) like '%".strtolower($q)."%'");        
+	    }
+		$items = $this->paginate('Item', $filters);
         $this->set('items',$items);
 	}
 
     public function view($id = null) 
 	{
         $this->Item->id = $id;
-        if (!$this->Item->exists()) {
+        if (!$this->Item->exists())
+		{
             throw new NotFoundException(__('Invalid item'));
         }
         $this->set('item', $this->Item->read(null, $id));
     }
 
+   	public function edit($id = null) 
+	{
+        $this->Item->id = $id;
+ 		if (!$this->Item->exists()) 
+		{
+            throw new NotFoundException(__('Invalid item'));
+        }
+        if ($this->request->is('post') || $this->request->is('put')) 
+		{
+            if ($this->Item->save($this->request->data))
+			{
+                $this->Session->setFlash(__('The item has been saved'));
+                $this->redirect(array('controller'=> 'items', 'action' => 'index'));
+            }
+			else
+			{
+                $this->Session->setFlash(__('The item could not be saved. Please, try again.'));
+            }
+        } 
+		else 
+		{
+            $this->request->data = $this->Item->read(null, $id);
+        }
+        $this->set('item', $this->Item->read(null, $id));
+    }
+
+    public function delete($id = null) 
+	{
+		//delete dovolimo samo na metodo POST
+        if (!$this->request->is('post')) 
+		{
+            throw new MethodNotAllowedException();
+        }
+        $this->Item->id = $id;
+        if (!$this->Item->exists())
+		{
+            throw new NotFoundException(__('Invalid item'));
+        }
+        if ($this->Item->delete())
+		{
+            $this->Session->setFlash(__('Item deleted'));
+            $this->redirect(array('action' => 'index'));
+        }
+        $this->Session->setFlash(__('Item was not deleted'));
+        $this->redirect(array('action' => 'index'));
+    }
 
 
 }

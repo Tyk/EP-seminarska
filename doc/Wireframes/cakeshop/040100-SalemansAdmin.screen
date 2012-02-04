@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
+  <widgets xsi:type="model:Browser" id="1" x="48" y="24" width="640" height="480" text="Browser&#xA;http://www.cakeshop.com/adm/salesmans" measuredWidth="640" measuredHeight="480"/>
+  <widgets xsi:type="model:HLine" id="2" x="48" y="144" width="640" measuredWidth="640" measuredHeight="6"/>
+  <widgets xsi:type="model:HLine" id="3" x="48" y="464" width="640" measuredWidth="640" measuredHeight="6"/>
+  <widgets xsi:type="model:Link" id="4" x="334" y="473" text="Legal | Authors" measuredWidth="85" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:VScrollbar" id="5" x="608" y="168" height="265" measuredWidth="17" measuredHeight="265"/>
+  <widgets xsi:type="model:Label" id="6" x="101" y="168" text="Available salesmans" measuredWidth="112" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:LinkBar" id="7" x="531" y="86" text="Home,Profile, Logout" measuredWidth="147" measuredHeight="21">
+    <font/>
+    <items x="0" y="0" width="34" height="21" text="Home"/>
+    <items x="52" y="0" width="36" height="21" text="Profile"/>
+    <items x="106" y="0" width="40" height="21" text="Logout"/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="8" x="108" y="208" width="61" text="Salesman 1" measuredWidth="61" measuredHeight="56" textAlignment="Center" icon="usergroup (large)" iconPosition="top">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="9" x="189" y="208" width="61" text="Salesman 1" measuredWidth="61" measuredHeight="56" textAlignment="Center" icon="usergroup (large)" iconPosition="top">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="10" x="271" y="208" width="61" text="Salesman 1" measuredWidth="61" measuredHeight="56" textAlignment="Center" icon="usergroup (large)" iconPosition="top">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="11" x="352" y="208" width="61" text="Salesman 1" measuredWidth="61" measuredHeight="56" textAlignment="Center" icon="usergroup (large)" iconPosition="top">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="12" x="434" y="208" width="61" text="Salesman 1" measuredWidth="61" measuredHeight="56" textAlignment="Center" icon="usergroup (large)" iconPosition="top">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="13" x="516" y="208" width="61" text="Salesman 1" measuredWidth="61" measuredHeight="56" textAlignment="Center" icon="usergroup (large)" iconPosition="top">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="57" x="516" y="328" width="61" text="Salesman 1" measuredWidth="61" measuredHeight="56" textAlignment="Center" icon="usergroup (large)" iconPosition="top">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="56" x="434" y="328" width="61" text="Salesman 1" measuredWidth="61" measuredHeight="56" textAlignment="Center" icon="usergroup (large)" iconPosition="top">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="55" x="352" y="328" width="61" text="Salesman 1" measuredWidth="61" measuredHeight="56" textAlignment="Center" icon="usergroup (large)" iconPosition="top">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="54" x="271" y="328" width="61" text="Salesman 1" measuredWidth="61" measuredHeight="56" textAlignment="Center" icon="usergroup (large)" iconPosition="top">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="53" x="189" y="328" width="61" text="Salesman 1" measuredWidth="61" measuredHeight="56" textAlignment="Center" icon="usergroup (large)" iconPosition="top">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="52" x="108" y="328" width="61" text="Salesman 1" measuredWidth="61" measuredHeight="56" textAlignment="Center" icon="usergroup (large)" iconPosition="top">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Link" id="14" x="101" y="264" text="edit | delete" measuredWidth="68" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Link" id="15" x="182" y="264" text="edit | delete" measuredWidth="68" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Link" id="16" x="264" y="264" text="edit | delete" measuredWidth="68" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Link" id="17" x="345" y="264" text="edit | delete" measuredWidth="68" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Link" id="18" x="434" y="264" text="edit | delete" measuredWidth="68" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Link" id="19" x="516" y="264" text="edit | delete" measuredWidth="68" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="20" x="224" y="86" text="CakeShopAdmin" measuredWidth="260" measuredHeight="46">
+    <font size="32"/>
+  </widgets>
+  <widgets xsi:type="model:Button" id="37" x="494" y="167" text="Add salesman" measuredWidth="95" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Link" id="58" x="101" y="384" text="edit | delete" measuredWidth="68" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Link" id="59" x="182" y="384" text="edit | delete" measuredWidth="68" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Link" id="60" x="264" y="384" text="edit | delete" measuredWidth="68" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Link" id="61" x="345" y="384" text="edit | delete" measuredWidth="68" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Link" id="62" x="434" y="384" text="edit | delete" measuredWidth="68" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Link" id="63" x="516" y="384" text="edit | delete" measuredWidth="68" measuredHeight="21">
+    <font/>
+  </widgets>
+  <hRuler/>
+  <vRuler/>
+  <font/>
+</model:Screen>

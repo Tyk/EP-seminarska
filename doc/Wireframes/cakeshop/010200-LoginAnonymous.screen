@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
+  <widgets xsi:type="model:Browser" id="1" x="48" y="24" width="640" height="480" text="Browser&#xA;https://www.cakeshop.com/login&#xA;" measuredWidth="640" measuredHeight="480"/>
+  <widgets xsi:type="model:HLine" id="15" x="48" y="184" width="640" measuredWidth="640" measuredHeight="6"/>
+  <widgets xsi:type="model:Label" id="18" x="304" y="86" text="CakeShop" measuredWidth="159" measuredHeight="46">
+    <font size="32"/>
+  </widgets>
+  <widgets xsi:type="model:HLine" id="19" x="48" y="464" width="640" measuredWidth="640" measuredHeight="6"/>
+  <widgets xsi:type="model:Link" id="20" x="334" y="473" text="Legal | Authors" measuredWidth="85" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:TextField" id="22" x="264" y="231" width="199" text="Text field" measuredWidth="199" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:TextField" id="23" x="264" y="288" width="199" text="Text field" measuredWidth="199" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="24" x="334" y="208" text="Username:" measuredWidth="62" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="25" x="335" y="265" text="Password:" measuredWidth="59" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Button" id="26" x="326" y="328" width="84" text="LOGIN" measuredWidth="84" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Link" id="27" x="334" y="400" text="lost password" measuredWidth="78" measuredHeight="21">
+    <font/>
+  </widgets>
+  <hRuler/>
+  <vRuler/>
+  <font/>
+</model:Screen>

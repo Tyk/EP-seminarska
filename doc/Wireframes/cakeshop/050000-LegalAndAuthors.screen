@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
+  <widgets xsi:type="model:Browser" id="1" x="48" y="24" width="640" height="480" text="Browser&#xA;http://www.cakeshop.com/legal || https://www.cakeshop.com/legal&#xA;" measuredWidth="640" measuredHeight="480"/>
+  <widgets xsi:type="model:HLine" id="2" x="48" y="184" width="640" measuredWidth="640" measuredHeight="6"/>
+  <widgets xsi:type="model:Label" id="3" x="304" y="86" text="CakeShop" measuredWidth="159" measuredHeight="46">
+    <font size="32"/>
+  </widgets>
+  <widgets xsi:type="model:HLine" id="4" x="48" y="464" width="640" measuredWidth="640" measuredHeight="6"/>
+  <hRuler/>
+  <vRuler/>
+  <font/>
+</model:Screen>

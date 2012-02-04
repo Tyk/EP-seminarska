@@ -1,6 +1,13 @@
 <div>
 	<div>
 		<?php 
+			echo $this->Form->create("Item",array('action' => 'index'));
+			echo $this->Form->input("q", array('label' => 'Search for'));
+			echo $this->Form->end("Search");
+		?> 
+	</div>
+	<div>
+		<?php 
 			echo " Order by: ";
 			echo $this->Paginator->sort('name', 'Name');
 			echo " | ";				
@@ -9,18 +16,32 @@
 			echo $this->Paginator->sort('id', 'Rating');
 			foreach ($items as $item):
 		?>		
-		<div>
+		<div>			
+			<?php
+				$item_image_url = "/img/no-image.gif";
+				if(isset($item['Image'][0]['image_url'])){
+				$item_image_url = $item['Image'][0]['image_url'];
+				}
+			?>
+			<img width="20px" height="20px" src="<?php echo $item_image_url; ?>"/>
             <?php 
-				echo $this->Html->link($item['Item']['name'], array('controller' => 'items', 'action' => 'view', $item['Item']['id'])); 
+				echo $this->Html->link($item['Item']['name'], array('controller' => 'items', 'action' => 'view',$item['Item']['id'])); 
 				echo " | ";				
 				echo $item['Item']['price'];
 				if(AuthComponent::user('role') == 'client')				
 				{	
 					echo " | ";				
-					echo $this->Html->link("buy", array('controller' => 'cart', 'action' => 'addto', $item['Item']['id']));
+					echo $this->Form->postLink("buy", array('controller' => 'cart', 'action' => 'add', $item['Item']['id'], 1));
+				}
+				if(AuthComponent::user('role') == 'salesman')				
+				{	
+					echo " | ";				
+					echo $this->Html->link("edit", array('controller' => 'items', 'action' => 'edit', $item['Item']['id']));
+					echo " | ";				
+					echo $this->Form->postLink("delete", array('controller' => 'items', 'action' => 'delete', $item['Item']['id']),
+					array(),"Are you sure you wish to delete this item?");
 				}
 			?>
-
 		</div>			
 		<?php endforeach; ?>
 		<div>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
+  <widgets xsi:type="model:Browser" id="1" x="48" y="24" width="640" height="480" text="Browser&#xA;http://www.cakeshop.com/adm/clients&#xA;" measuredWidth="640" measuredHeight="480"/>
+  <widgets xsi:type="model:HLine" id="5" x="48" y="464" width="640" measuredWidth="640" measuredHeight="6"/>
+  <widgets xsi:type="model:Link" id="6" x="334" y="473" text="Legal | Authors" measuredWidth="85" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:LinkBar" id="9" x="531" y="86" text="Home,Profile, Logout" measuredWidth="147" measuredHeight="21">
+    <font/>
+    <items x="0" y="0" width="34" height="21" text="Home"/>
+    <items x="52" y="0" width="36" height="21" text="Profile"/>
+    <items x="106" y="0" width="40" height="21" text="Logout"/>
+  </widgets>
+  <widgets xsi:type="model:VScrollbar" id="36" x="608" y="240" height="205" measuredWidth="17" measuredHeight="205"/>
+  <widgets xsi:type="model:Label" id="37" x="101" y="208" text="Available clients" measuredWidth="92" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="38" x="108" y="240" width="61" text="Client 1" measuredWidth="61" measuredHeight="56" textAlignment="Center" icon="user (large)" iconPosition="top">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="39" x="189" y="240" width="61" text="Client 1" measuredWidth="61" measuredHeight="56" textAlignment="Center" icon="user (large)" iconPosition="top">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="40" x="271" y="240" width="61" text="Client 1" measuredWidth="61" measuredHeight="56" textAlignment="Center" icon="user (large)" iconPosition="top">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="41" x="352" y="240" width="61" text="Client 1" measuredWidth="61" measuredHeight="56" textAlignment="Center" icon="user (large)" iconPosition="top">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="42" x="434" y="240" width="61" text="Client 1" measuredWidth="61" measuredHeight="56" textAlignment="Center" icon="user (large)" iconPosition="top">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="43" x="516" y="240" width="61" text="Client 1" measuredWidth="61" measuredHeight="56" textAlignment="Center" icon="user (large)" iconPosition="top">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Link" id="44" x="101" y="296" text="edit | delete" measuredWidth="68" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Link" id="45" x="182" y="296" text="edit | delete" measuredWidth="68" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Link" id="46" x="264" y="296" text="edit | delete" measuredWidth="68" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Link" id="47" x="345" y="296" text="edit | delete" measuredWidth="68" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Link" id="48" x="434" y="296" text="edit | delete" measuredWidth="68" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Link" id="49" x="516" y="296" text="edit | delete" measuredWidth="68" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Button" id="50" x="516" y="207" text="Add client" measuredWidth="74" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="52" x="108" y="328" width="61" text="Client 1" measuredWidth="61" measuredHeight="56" textAlignment="Center" icon="user (large)" iconPosition="top">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="53" x="189" y="328" width="61" text="Client 1" measuredWidth="61" measuredHeight="56" textAlignment="Center" icon="user (large)" iconPosition="top">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="54" x="271" y="328" width="61" text="Client 1" measuredWidth="61" measuredHeight="56" textAlignment="Center" icon="user (large)" iconPosition="top">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="55" x="352" y="328" width="61" text="Client 1" measuredWidth="61" measuredHeight="56" textAlignment="Center" icon="user (large)" iconPosition="top">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="56" x="434" y="328" width="61" text="Client 1" measuredWidth="61" measuredHeight="56" textAlignment="Center" icon="user (large)" iconPosition="top">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="57" x="516" y="328" width="61" text="Client 1" measuredWidth="61" measuredHeight="56" textAlignment="Center" icon="user (large)" iconPosition="top">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Link" id="58" x="101" y="384" text="edit | delete" measuredWidth="68" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Link" id="59" x="182" y="384" text="edit | delete" measuredWidth="68" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Link" id="60" x="264" y="384" text="edit | delete" measuredWidth="68" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Link" id="61" x="345" y="384" text="edit | delete" measuredWidth="68" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Link" id="62" x="434" y="384" text="edit | delete" measuredWidth="68" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Link" id="63" x="516" y="384" text="edit | delete" measuredWidth="68" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:HLine" id="64" x="48" y="184" width="640" measuredWidth="640" measuredHeight="6"/>
+  <widgets xsi:type="model:Label" id="65" x="304" y="86" text="CakeShop" measuredWidth="159" measuredHeight="46">
+    <font size="32"/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="66" x="334" y="120" text="sales" measuredWidth="83" measuredHeight="46" textAlignment="Center">
+    <font size="32"/>
+  </widgets>
+  <hRuler/>
+  <vRuler/>
+  <font/>
+</model:Screen>

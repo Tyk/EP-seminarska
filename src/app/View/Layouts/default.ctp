@@ -22,7 +22,7 @@ show up on all of your views, include it here -->
 		{
 			echo $this->Html->link("Home", array('controller' => 'home', 'action' => 'index')); 
 			echo "|";
-			echo $this->Html->link("Cart", array('controller' => 'cart', 'action' => 'index')); 
+			echo $this->Html->link("Cart[".$items_in_cart."]", array('controller' => 'cart', 'action' => 'index')); 
 			echo "|";
 			echo $this->Html->link("Orders", array('controller' => 'orders', 'action' => 'index'));						
 			echo "|";

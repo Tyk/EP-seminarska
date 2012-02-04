@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
+  <widgets xsi:type="model:Browser" id="1" x="48" y="24" width="640" height="480" text="Browser&#xA;https://www.cakeshop.com&#xA;" measuredWidth="640" measuredHeight="480"/>
+  <widgets xsi:type="model:SearchField" id="2" x="200" y="144" width="348" text="Search" measuredWidth="348" measuredHeight="24"/>
+  <widgets xsi:type="model:HLine" id="4" x="48" y="184" width="640" measuredWidth="640" measuredHeight="6"/>
+  <widgets xsi:type="model:Label" id="7" x="304" y="86" text="CakeShop" measuredWidth="159" measuredHeight="46">
+    <font size="32"/>
+  </widgets>
+  <widgets xsi:type="model:HLine" id="9" x="48" y="464" width="640" measuredWidth="640" measuredHeight="6"/>
+  <widgets xsi:type="model:Link" id="10" x="334" y="473" text="Legal | Authors" measuredWidth="85" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="15" x="111" y="256" width="61" text="Artkel1\n100eur\n" measuredWidth="61" measuredHeight="82" textAlignment="Center" icon="image (large)" iconPosition="top">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="16" x="192" y="256" width="61" text="Artkel1\n100eur" measuredWidth="61" measuredHeight="69" textAlignment="Center" icon="image (large)" iconPosition="top">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="17" x="274" y="256" width="61" text="Artkel1\n100eur" measuredWidth="61" measuredHeight="69" textAlignment="Center" icon="image (large)" iconPosition="top">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="18" x="355" y="256" width="61" text="Artkel1\n100eur" measuredWidth="61" measuredHeight="69" textAlignment="Center" icon="image (large)" iconPosition="top">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="19" x="437" y="256" width="61" text="Artkel1\n100eur" measuredWidth="61" measuredHeight="69" textAlignment="Center" icon="image (large)" iconPosition="top">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="20" x="519" y="256" width="61" text="Artkel1\n100eur" measuredWidth="61" measuredHeight="69" textAlignment="Center" icon="image (large)" iconPosition="top">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="21" x="111" y="352" width="61" text="Artkel1\n100eur" measuredWidth="61" measuredHeight="69" textAlignment="Center" icon="image (large)" iconPosition="top">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="22" x="192" y="352" width="61" text="Artkel1\n100eur" measuredWidth="61" measuredHeight="69" textAlignment="Center" icon="image (large)" iconPosition="top">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="23" x="274" y="352" width="61" text="Artkel1\n100eur" measuredWidth="61" measuredHeight="69" textAlignment="Center" icon="image (large)" iconPosition="top">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="24" x="355" y="352" width="61" text="Artkel1\n100eur" measuredWidth="61" measuredHeight="69" textAlignment="Center" icon="image (large)" iconPosition="top">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="25" x="437" y="352" width="61" text="Artkel1\n100eur" measuredWidth="61" measuredHeight="69" textAlignment="Center" icon="image (large)" iconPosition="top">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="26" x="519" y="352" width="61" text="Artkel1\n100eur" measuredWidth="61" measuredHeight="69" textAlignment="Center" icon="image (large)" iconPosition="top">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:VScrollbar" id="27" x="600" y="246" height="175" measuredWidth="17" measuredHeight="175"/>
+  <widgets xsi:type="model:Label" id="28" x="120" y="216" text="Danes vam priporočeni artikli:" measuredWidth="166" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:LinkBar" id="30" x="478" y="86" text="Cart,Orders,Profile,Logout" measuredWidth="195" measuredHeight="21">
+    <font/>
+    <items x="0" y="0" width="25" height="21" text="Cart"/>
+    <items x="43" y="0" width="39" height="21" text="Orders"/>
+    <items x="100" y="0" width="36" height="21" text="Profile"/>
+    <items x="154" y="0" width="40" height="21" text="Logout"/>
+  </widgets>
+  <widgets xsi:type="model:Link" id="31" x="128" y="312" text="buy" measuredWidth="23" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Link" id="32" x="208" y="312" text="buy" measuredWidth="23" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Link" id="33" x="291" y="312" text="buy" measuredWidth="23" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Link" id="34" x="373" y="312" text="buy" measuredWidth="23" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Link" id="35" x="456" y="312" text="buy" measuredWidth="23" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Link" id="36" x="536" y="312" text="buy" measuredWidth="23" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Link" id="37" x="128" y="408" text="buy" measuredWidth="23" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Link" id="38" x="208" y="408" text="buy" measuredWidth="23" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Link" id="39" x="291" y="408" text="buy" measuredWidth="23" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Link" id="40" x="373" y="408" text="buy" measuredWidth="23" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Link" id="41" x="456" y="408" text="buy" measuredWidth="23" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Link" id="42" x="540" y="408" text="buy" measuredWidth="23" measuredHeight="21">
+    <font/>
+  </widgets>
+  <hRuler/>
+  <vRuler/>
+  <font/>
+</model:Screen>

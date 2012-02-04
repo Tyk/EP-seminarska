@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
+  <widgets xsi:type="model:Browser" id="1" x="48" y="24" width="640" height="480" text="Browser&#xA;https://www.cakeshop.com/client/1/orders&#xA;" measuredWidth="640" measuredHeight="480"/>
+  <widgets xsi:type="model:HLine" id="2" x="48" y="184" width="640" measuredWidth="640" measuredHeight="6"/>
+  <widgets xsi:type="model:Label" id="3" x="274" y="86" text="CakeShop" measuredWidth="159" measuredHeight="46">
+    <font size="32"/>
+  </widgets>
+  <widgets xsi:type="model:HLine" id="4" x="48" y="464" width="640" measuredWidth="640" measuredHeight="6"/>
+  <widgets xsi:type="model:Link" id="5" x="334" y="473" text="Legal | Authors" measuredWidth="85" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="19" x="120" y="216" text="Vaša pretekla naročila:" measuredWidth="127" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:LinkBar" id="20" x="469" y="86" text="Shop, Orders, Profile,Logout" measuredWidth="199" measuredHeight="21">
+    <font/>
+    <items x="0" y="0" width="29" height="21" text="Shop"/>
+    <items x="47" y="0" width="39" height="21" text="Orders"/>
+    <items x="104" y="0" width="36" height="21" text="Profile"/>
+    <items x="158" y="0" width="40" height="21" text="Logout"/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="23" x="304" y="120" text="Orders" measuredWidth="111" measuredHeight="46">
+    <font size="32"/>
+  </widgets>
+  <widgets xsi:type="model:Table" id="46" x="120" y="246" width="465" height="107" text="ID,Datum,Število artiklov,Status, Actions&#xA;1,12.1.2012,35,Odprto,[Details]|[Povrni]&#xA;2,12.1.2012,35,Oddano,[Details]|[Povrni]&#xA;3,12.1.2012,35,Zakljuceno,[Details]|[Povrni]&#xA;4,12.1.2012,35,V pripravi,[Details]|[Povrni]&#xA;4,12.1.2012,35,V pripravi,[Details]|[Povrni]&#xA;&#xA;" measuredWidth="465" measuredHeight="107" selection="3" verticalScrollbar="true" alternative="#eeeeee">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Table" id="47" x="120" y="387" width="465" height="62" text="Naziv,Število artiklov,Cena&#xA;Smrekca,10,100 eur&#xA;Smrekca,10,100 eur&#xA;Smrekca,10,100 eur&#xA;Smrekca,10,100 eur" measuredWidth="465" measuredHeight="62" selection="" verticalScrollbar="true" alternative="#eeeeee">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="48" x="120" y="360" text="Artikli naročila 3:" measuredWidth="97" measuredHeight="21">
+    <font/>
+  </widgets>
+  <hRuler/>
+  <vRuler/>
+  <font/>
+</model:Screen>

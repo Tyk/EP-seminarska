@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
+  <widgets xsi:type="model:Browser" id="1" x="48" y="24" width="640" height="480" text="Browser&#xA;https://www.cakeshop.com/adm/users/3/edit&#xA;" measuredWidth="640" measuredHeight="480"/>
+  <widgets xsi:type="model:HLine" id="2" x="48" y="184" width="640" measuredWidth="640" measuredHeight="6"/>
+  <widgets xsi:type="model:Label" id="3" x="304" y="86" text="CakeShop" measuredWidth="159" measuredHeight="46">
+    <font size="32"/>
+  </widgets>
+  <widgets xsi:type="model:HLine" id="4" x="48" y="464" width="640" measuredWidth="640" measuredHeight="6"/>
+  <widgets xsi:type="model:Link" id="5" x="334" y="473" text="Legal | Authors" measuredWidth="85" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Button" id="6" x="328" y="416" width="84" text="SAVE" measuredWidth="84" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="7" x="259" y="208" text="Ime" measuredWidth="25" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="8" x="259" y="250" text="Naslov" measuredWidth="41" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="9" x="259" y="229" text="Priimek" measuredWidth="45" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="10" x="259" y="271" text="Email" measuredWidth="34" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="11" x="259" y="292" text="Mesto" measuredWidth="38" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="12" x="259" y="313" text="Poštna št." measuredWidth="58" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="13" x="259" y="334" text="Tel. št." measuredWidth="42" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="14" x="259" y="355" text="Password" measuredWidth="56" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="15" x="259" y="376" text="Repeat password" measuredWidth="96" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:TextField" id="16" x="384" y="229" width="119" text="Text field" measuredWidth="119" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:TextField" id="17" x="384" y="292" width="119" text="Text field" measuredWidth="119" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:TextField" id="18" x="384" y="355" width="119" text="Text field" measuredWidth="119" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:TextField" id="19" x="384" y="271" width="119" text="Text field" measuredWidth="119" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:TextField" id="20" x="384" y="334" width="119" text="Text field" measuredWidth="119" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:TextField" id="21" x="384" y="208" width="119" text="Text field" measuredWidth="119" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:TextField" id="22" x="384" y="250" width="119" text="Text field" measuredWidth="119" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:TextField" id="23" x="384" y="313" width="119" text="Text field" measuredWidth="119" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:TextField" id="24" x="384" y="376" width="119" text="Text field" measuredWidth="119" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:LinkBar" id="25" x="585" y="86" text="Home, Logout" measuredWidth="93" measuredHeight="21">
+    <font/>
+    <items x="0" y="0" width="34" height="21" text="Home"/>
+    <items x="52" y="0" width="40" height="21" text="Logout"/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="27" x="330" y="120" text="profile" measuredWidth="106" measuredHeight="46">
+    <font size="32"/>
+  </widgets>
+  <hRuler/>
+  <vRuler/>
+  <font/>
+</model:Screen>

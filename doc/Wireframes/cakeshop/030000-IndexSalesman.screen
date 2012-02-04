@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
+  <widgets xsi:type="model:Browser" id="1" x="48" y="24" width="640" height="480" text="Browser&#xA;https://www.cakeshop.com/prodaja&#xA;" measuredWidth="640" measuredHeight="480"/>
+  <widgets xsi:type="model:HLine" id="3" x="48" y="184" width="640" measuredWidth="640" measuredHeight="6"/>
+  <widgets xsi:type="model:Label" id="4" x="304" y="86" text="CakeShop" measuredWidth="159" measuredHeight="46">
+    <font size="32"/>
+  </widgets>
+  <widgets xsi:type="model:HLine" id="5" x="48" y="464" width="640" measuredWidth="640" measuredHeight="6"/>
+  <widgets xsi:type="model:Link" id="6" x="334" y="473" text="Legal | Authors" measuredWidth="85" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:LinkBar" id="21" x="583" y="86" text="Profile,Logout" measuredWidth="95" measuredHeight="21">
+    <font/>
+    <items x="0" y="0" width="36" height="21" text="Profile"/>
+    <items x="54" y="0" width="40" height="21" text="Logout"/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="45" x="334" y="120" text="sales" measuredWidth="83" measuredHeight="46" textAlignment="Center">
+    <font size="32"/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="46" x="234" y="248" width="61" text="Items" measuredWidth="61" measuredHeight="72" textAlignment="Center" icon="apple (xlarge)" iconPosition="top">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="47" x="352" y="248" width="61" text="Clients" measuredWidth="61" measuredHeight="72" textAlignment="Center" icon="usergroup (xlarge)" iconPosition="top">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="48" x="480" y="248" width="61" text="Orders" measuredWidth="61" measuredHeight="72" textAlignment="Center" icon="cube (xlarge)" iconPosition="top">
+    <font/>
+  </widgets>
+  <hRuler/>
+  <vRuler/>
+  <font/>
+</model:Screen>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
+  <widgets xsi:type="model:Browser" id="1" x="48" y="24" width="640" height="480" text="Browser&#xA;https://www.cakeshop.com/prodaja/items/1/edit&#xA;" measuredWidth="640" measuredHeight="480"/>
+  <widgets xsi:type="model:HLine" id="4" x="48" y="184" width="640" measuredWidth="640" measuredHeight="6"/>
+  <widgets xsi:type="model:VScrollbar" id="5" x="600" y="246" height="175" measuredWidth="17" measuredHeight="175"/>
+  <widgets xsi:type="model:Label" id="7" x="304" y="86" text="CakeShop" measuredWidth="159" measuredHeight="46">
+    <font size="32"/>
+  </widgets>
+  <widgets xsi:type="model:HLine" id="9" x="48" y="464" width="640" measuredWidth="640" measuredHeight="6"/>
+  <widgets xsi:type="model:Link" id="10" x="334" y="473" text="Legal | Authors" measuredWidth="85" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:ScratchOut" id="12" x="96" y="246" width="169" height="171" measuredWidth="169" measuredHeight="171" annotation="true"/>
+  <widgets xsi:type="model:Button" id="14" x="96" y="420" text="Save" measuredWidth="44" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Button" id="15" x="96" y="209" text="Back to list" measuredWidth="79" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Button" id="16" x="96" y="252" text="ChangeImage" measuredWidth="93" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:TextArea" id="20" x="288" y="246" width="305" height="171" text="A *paragraph* of text&#xA;A _second_ row of text" measuredWidth="305" measuredHeight="171">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:TextField" id="21" x="288" y="210" width="97" text="Artikel 1" measuredWidth="97" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:TextField" id="22" x="496" y="210" width="97" text="Price" measuredWidth="97" measuredHeight="21">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="23" x="334" y="120" text="sales" measuredWidth="83" measuredHeight="46" textAlignment="Center">
+    <font size="32"/>
+  </widgets>
+  <widgets xsi:type="model:LinkBar" id="25" x="531" y="86" text="Home, Profile,Logout" measuredWidth="147" measuredHeight="21">
+    <font/>
+    <items x="0" y="0" width="34" height="21" text="Home"/>
+    <items x="52" y="0" width="36" height="21" text="Profile"/>
+    <items x="106" y="0" width="40" height="21" text="Logout"/>
+  </widgets>
+  <hRuler/>
+  <vRuler/>
+  <font/>
+</model:Screen>
