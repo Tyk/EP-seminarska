@@ -1,6 +1,6 @@
 <div>
 	<div>
-		<?php echo $this->Html->link("Orders", array('controller' => 'items', 'action' => 'orders')); ?>
+		<?php echo $this->Html->link("Orders", array('controller' => 'orders', 'action' => 'index')); ?>
 	</div>
 	<div>
 		<?php echo $this->Html->link("Clients", array('controller' => 'users', 'action' => 'clients_index')); ?>

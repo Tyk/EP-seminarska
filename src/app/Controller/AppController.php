@@ -15,6 +15,7 @@ class AppController extends Controller {
 	{
  		$this->Auth->allow('index', 'view');
 		$this->layout = 'default';
+		
 		if($this->Auth->loggedIn())
 		{
 			if($this->Auth->user('role') == "admin")  $this->layout = 'adm';		

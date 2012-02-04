@@ -220,9 +220,9 @@ INSERT INTO `images` VALUES ('102','102','1','http://upload.wikimedia.org/wikipe
 INSERT INTO `images` VALUES ('103','103','1','http://upload.wikimedia.org/wikipedia/commons/4/4f/Whoopiepies1.jpg');
 INSERT INTO `images` VALUES ('104','104','1','http://upload.wikimedia.org/wikipedia/commons/4/44/Youkan_mizuyoukan.jpg');
 
-INSERT INTO 'orders' VALUES ('1','1','2012-01-01 12:00:00','Odprto');
-INSERT INTO 'orders' VALUES ('2','2','2012-01-02 12:00:00','Oddano');
-INSERT INTO 'orders' VALUES ('3','3','2012-01-03 12:00:00','Zaključeno');
-INSERT INTO 'orders' VALUES ('4','4','2012-01-04 12:00:00','V pripravi');
+INSERT INTO `orders` (`id`, `user_id`, `date`, `state`) VALUES ('1','1','2012-01-01 12:00:00','1');
+INSERT INTO `orders` (`id`, `user_id`, `date`, `state`) VALUES ('2','2','2012-01-02 12:00:00','2');
+INSERT INTO `orders` (`id`, `user_id`, `date`, `state`) VALUES ('3','3','2012-01-03 12:00:00','3');
+INSERT INTO `orders` (`id`, `user_id`, `date`, `state`) VALUES ('4','4','2012-01-04 12:00:00','4');
 
 
