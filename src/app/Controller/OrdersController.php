@@ -6,17 +6,24 @@ class OrdersController extends AppController {
 	public $components = array('Session');
 
 	public function index() {
-		$this->set('orders', $this->Order->find('all'));
-		
 	}
 
-	public function view($id) 
+	public function view($id=NULL) 
 	{	
-		$this->Order->id = $id;
-		$this->set('order', $this->Order->read());
-		$this->set('id', $id);
+		$this->set('orders', $this->Order->find('all'));
+		$this->set('show_details', false);
+
+		if($id != NULL)
+		{
+			$this->Order->id = $id;
+			$this->set('selected_order', $this->Order->read());
+			$this->set('id', $id);
+			$this->set('show_details', true);
+		}
 	}
 
-	public function edit() {
+	public function edit($id) {
+		$this->Order->id = $id;
+		$this->set('id', $id);
 	}
 }

@@ -230,3 +230,5 @@ INSERT INTO `items_orders` (`id`, `order_id`, `item_id`, `quantity`) VALUES ('1'
 INSERT INTO `items_orders` (`id`, `order_id`, `item_id`, `quantity`) VALUES ('2', '2', '23', '6');
 INSERT INTO `items_orders` (`id`, `order_id`, `item_id`, `quantity`) VALUES ('3', '3', '12', '27');
 INSERT INTO `items_orders` (`id`, `order_id`, `item_id`, `quantity`) VALUES ('4', '4', '6', '23');
+INSERT INTO `items_orders` (`id`, `order_id`, `item_id`, `quantity`) VALUES ('5', '5', '3', '19');
+INSERT INTO `items_orders` (`id`, `order_id`, `item_id`, `quantity`) VALUES ('6', '5', '5', '2');
