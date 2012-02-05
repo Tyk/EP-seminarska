@@ -2,6 +2,7 @@ tmp/
 config/database.php
 app/config/database.php
 !empty
+tmp/**/*
 *~
 
 # OS generated files #

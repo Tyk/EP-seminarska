@@ -7,7 +7,7 @@
         echo $this->Form->input('last_name');
         echo $this->Form->input('username');
         echo $this->Form->input('password');
-
+		echo $this->Form->input('password_confirm');
 		if ($user['role'] == "client")
 		{
         	echo $this->Form->input('email');
@@ -24,7 +24,7 @@
 		}
 		if (AuthComponent::user('role') == "admin") 
 		{        
-			echo $this->Form->input('role', array('options' => $roles));
+			//echo $this->Form->input('role', array('options' => $roles));
 			echo $this->Form->input('active', array('options' => array(true => 'YES',false => 'NO')));
 		}
     ?>

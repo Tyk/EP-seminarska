@@ -17,8 +17,24 @@ class ItemsController extends AppController
 			$q  = $this->data['Item']['q'];
 	        $filters = array("lower(Item.name) like '%".strtolower($q)."%' OR lower(Item.description) like '%".strtolower($q)."%'");        
 	    }
+		array_push($filters, "Item.published > 0");
 		$items = $this->paginate('Item', $filters);
         $this->set('items',$items);
+	}
+
+
+    public function unpublished_index() 
+	{
+	    $filters = array();
+	    if(isset($this->data['Item']['q']))
+		{
+			$q  = $this->data['Item']['q'];
+	        $filters = array("lower(Item.name) like '%".strtolower($q)."%' OR lower(Item.description) like '%".strtolower($q)."%'");        
+	    }
+		array_push($filters, "Item.published <= 0");
+		$items = $this->paginate('Item', $filters);
+        $this->set('items',$items);
+		$this->render('index');
 	}
 
     public function view($id = null) 
@@ -29,6 +45,25 @@ class ItemsController extends AppController
             throw new NotFoundException(__('Invalid item'));
         }
         $this->set('item', $this->Item->read(null, $id));
+    }
+
+
+	public function add()
+	{
+        if ($this->request->is('post'))
+		{
+           	$this->Item->create();
+           	if ($this->Item->save($this->request->data))
+			{
+				$new_item_id = $this->Item->id;
+                $this->Session->setFlash(__('The item has been saved'));
+                $this->redirect(array('controller'=>'items', 'action' => 'edit', $new_item_id));
+            }
+			else
+			{
+                $this->Session->setFlash(__('The item could not be saved. Please, try again.'));
+            }
+        }
     }
 
    	public function edit($id = null) 

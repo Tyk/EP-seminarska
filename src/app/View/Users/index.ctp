@@ -5,14 +5,16 @@
         <th>Name</th>
         <th>Role</th>
     </tr>
-    <!-- Here is where we loop through our $posts array, printing out post info -->
-    <?php foreach ($users as $user): ?>
+    <?php foreach ($users as $user): 
+		$user_id =  $user['User']['id'];
+		$user_role =  $user['User']['role'];
+	?>
     <tr>
         <td><?php echo $user['User']['id']; ?></td>
         <td>
-            <?php echo $this->Html->link($user['User']['username'], array('controller' => 'users', 'action' => 'edit', $user['User']['id'])); ?>
+            <?php echo $user['User']['username'], array('controller' => 'users', 'action' => 'edit',$user_id); ?>
         </td>
-        <td><?php echo $user['User']['role']; ?></td>
+        <td><?php echo $user_role; ?></td>
     </tr>
     <?php endforeach; ?>
 </table>

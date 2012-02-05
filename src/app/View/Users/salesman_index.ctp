@@ -1,4 +1,5 @@
 <h1>Salesman</h1>
+<?php echo $this->Html->link("new", array('controller' => 'users', 'action' => 'add_salesman')); ?>
 <table>
     <tr>
         <th>Id</th>
