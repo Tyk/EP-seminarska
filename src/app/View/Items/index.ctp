@@ -1,8 +1,8 @@
 <div>
-	<div>
+	<div id="search_box">
 		<?php 
 			echo $this->Form->create("Item",array('action' => 'index'));
-			echo $this->Form->input("q", array('label' => 'Search cakes:'));
+			echo $this->Form->input("q",array('label'=>'','class' => 'search_box_input'));
 			echo $this->Form->end("Search");
 		?> 
 	</div>
@@ -11,15 +11,20 @@
 			if(AuthComponent::user('role') == 'salesman') echo $this->Html->link("new", array('controller' => 'items', 'action' => 'add'));
 		?> 
 	</div>
-	<div>
+	<div>	
+		<div id="pager">
 		<?php 
 			echo " Order by: ";
 			echo $this->Paginator->sort('name', 'Name');
 			echo " | ";				
-			echo $this->Paginator->sort('price', 'Price');				
+			echo $this->Paginator->sort('price', 'Price');
+		?>		
+		</div>
+		<?php				
 			foreach ($items as $item):
 		?>		
-		<div>			
+		
+		<div id="items_list">			
 			<?php
 				$item_image_url = "/img/no-image.gif";
 				if(isset($item['Image'][0]['image_url'])) $item_image_url = $item['Image'][0]['image_url'];
@@ -47,7 +52,7 @@
 		<?php 
 			endforeach; 
 		?>
-		<div>
+		<div id="pager">
 			<?php 
 				echo $this->Paginator->numbers();
 				echo ' | ';
