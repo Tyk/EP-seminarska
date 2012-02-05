@@ -1,8 +1,6 @@
-tmp/*
+tmp/
 config/database.php
-app/tmp/*
 app/config/database.php
-src/app/tmp/*
 !empty
 *~
 
@@ -12,3 +10,4 @@ src/app/tmp/*
 ehthumbs.db
 Icon?
 Thumbs.db
+
