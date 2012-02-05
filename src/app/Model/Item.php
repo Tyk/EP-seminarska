@@ -3,7 +3,8 @@
 class Item extends AppModel
 {
     public $name = 'Item';
-	var $hasMany = 'Image';
+	var $hasMany = 'Image';	
+	var $hasAndBelongsToMany = 'Order';
 
 	public $validate = array(
         'name' => array(

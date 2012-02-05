@@ -77,6 +77,4 @@ class ItemsController extends AppController
         $this->Session->setFlash(__('Item was not deleted'));
         $this->redirect(array('action' => 'index'));
     }
-
-
 }
