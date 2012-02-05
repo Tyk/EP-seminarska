@@ -44,7 +44,7 @@ CREATE TABLE `orders` (
   `id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
   `user_id` int(11) NOT NULL,
   `date` TIMESTAMP NOT NULL,
-  `state` int(2) NOT NULL);
+  `state` varchar(20) COLLATE utf8_slovenian_ci NOT NULL);
 
 DROP TABLE IF EXISTS `items_orders`;
 CREATE TABLE `items_orders` (
