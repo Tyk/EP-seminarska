@@ -10,8 +10,13 @@ class OrdersController extends AppController {
 		
 	}
 
-	public function view($id) {
+	public function view($id) 
+	{	
 		$this->Order->id = $id;
 		$this->set('order', $this->Order->read());
+		$this->set('id', $id);
+	}
+
+	public function edit() {
 	}
 }

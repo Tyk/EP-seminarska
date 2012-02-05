@@ -1399,3 +1399,327 @@
 #3 /home/ep/EP-seminarska/src/lib/Cake/Routing/Dispatcher.php(86): Dispatcher->_invoke(Object(OrdersController), Object(CakeRequest), Object(CakeResponse))
 #4 /home/ep/EP-seminarska/src/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #5 {main}
+2012-02-04 22:55:55 Error: [NotFoundException] Invalid item
+#0 [internal function]: ItemsController->edit('favicon.ico')
+#1 /home/ep/EP-seminarska/src/lib/Cake/Controller/Controller.php(473): ReflectionMethod->invokeArgs(Object(ItemsController), Array)
+#2 /home/ep/EP-seminarska/src/lib/Cake/Routing/Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#3 /home/ep/EP-seminarska/src/lib/Cake/Routing/Dispatcher.php(86): Dispatcher->_invoke(Object(ItemsController), Object(CakeRequest), Object(CakeResponse))
+#4 /home/ep/EP-seminarska/src/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-02-04 22:55:55 Error: [NotFoundException] Invalid item
+#0 [internal function]: ItemsController->edit('favicon.ico')
+#1 /home/ep/EP-seminarska/src/lib/Cake/Controller/Controller.php(473): ReflectionMethod->invokeArgs(Object(ItemsController), Array)
+#2 /home/ep/EP-seminarska/src/lib/Cake/Routing/Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#3 /home/ep/EP-seminarska/src/lib/Cake/Routing/Dispatcher.php(86): Dispatcher->_invoke(Object(ItemsController), Object(CakeRequest), Object(CakeResponse))
+#4 /home/ep/EP-seminarska/src/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-02-04 22:58:05 Error: [NotFoundException] Invalid user
+#0 [internal function]: UsersController->edit('favicon.ico')
+#1 /home/ep/EP-seminarska/src/lib/Cake/Controller/Controller.php(473): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /home/ep/EP-seminarska/src/lib/Cake/Routing/Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#3 /home/ep/EP-seminarska/src/lib/Cake/Routing/Dispatcher.php(86): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /home/ep/EP-seminarska/src/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-02-04 22:58:05 Error: [NotFoundException] Invalid user
+#0 [internal function]: UsersController->edit('favicon.ico')
+#1 /home/ep/EP-seminarska/src/lib/Cake/Controller/Controller.php(473): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /home/ep/EP-seminarska/src/lib/Cake/Routing/Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#3 /home/ep/EP-seminarska/src/lib/Cake/Routing/Dispatcher.php(86): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /home/ep/EP-seminarska/src/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-02-04 23:00:28 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Item.order_id' in 'field list'
+#0 /home/ep/EP-seminarska/src/lib/Cake/Model/Datasource/DboSource.php(436): PDOStatement->execute(Array)
+#1 /home/ep/EP-seminarska/src/lib/Cake/Model/Datasource/DboSource.php(403): DboSource->_execute('SELECT `Item`.`...', Array)
+#2 /home/ep/EP-seminarska/src/lib/Cake/Model/Datasource/DboSource.php(647): DboSource->execute('SELECT `Item`.`...', Array, Array)
+#3 /home/ep/EP-seminarska/src/lib/Cake/Model/Datasource/DboSource.php(1282): DboSource->fetchAll('SELECT `Item`.`...', false)
+#4 /home/ep/EP-seminarska/src/lib/Cake/Model/Datasource/DboSource.php(1150): DboSource->fetchAssociated(Object(Order), 'SELECT `Item`.`...', Array)
+#5 /home/ep/EP-seminarska/src/lib/Cake/Model/Datasource/DboSource.php(1069): DboSource->queryAssociation(Object(Order), Object(Item), 'hasMany', 'Item', Array, Array, true, Array, 0, Array)
+#6 /home/ep/EP-seminarska/src/lib/Cake/Model/Model.php(2483): DboSource->read(Object(Order), Array)
+#7 /home/ep/EP-seminarska/src/app/Controller/OrdersController.php(9): Model->find('all')
+#8 [internal function]: OrdersController->index()
+#9 /home/ep/EP-seminarska/src/lib/Cake/Controller/Controller.php(473): ReflectionMethod->invokeArgs(Object(OrdersController), Array)
+#10 /home/ep/EP-seminarska/src/lib/Cake/Routing/Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#11 /home/ep/EP-seminarska/src/lib/Cake/Routing/Dispatcher.php(86): Dispatcher->_invoke(Object(OrdersController), Object(CakeRequest), Object(CakeResponse))
+#12 /home/ep/EP-seminarska/src/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2012-02-04 23:06:05 Error: [MissingViewException] View file "/home/ep/EP-seminarska/src/app/View/Orders/view.ctp" is missing.
+#0 /home/ep/EP-seminarska/src/lib/Cake/View/View.php(360): View->_getViewFileName(NULL)
+#1 /home/ep/EP-seminarska/src/lib/Cake/Controller/Controller.php(900): View->render(NULL, NULL)
+#2 /home/ep/EP-seminarska/src/lib/Cake/Routing/Dispatcher.php(111): Controller->render()
+#3 /home/ep/EP-seminarska/src/lib/Cake/Routing/Dispatcher.php(86): Dispatcher->_invoke(Object(OrdersController), Object(CakeRequest), Object(CakeResponse))
+#4 /home/ep/EP-seminarska/src/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-02-05 08:10:48 Error: [MissingActionException] Action UsersController::favicon.ico() could not be found.
+#0 /home/ep/EP-seminarska/src/lib/Cake/Routing/Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#1 /home/ep/EP-seminarska/src/lib/Cake/Routing/Dispatcher.php(86): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/ep/EP-seminarska/src/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-02-05 08:11:04 Error: [MissingActionException] Action UsersController::favicon.ico() could not be found.
+#0 /home/ep/EP-seminarska/src/lib/Cake/Routing/Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#1 /home/ep/EP-seminarska/src/lib/Cake/Routing/Dispatcher.php(86): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/ep/EP-seminarska/src/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-02-05 08:11:05 Error: [NotFoundException] Invalid user
+#0 [internal function]: UsersController->edit('favicon.ico')
+#1 /home/ep/EP-seminarska/src/lib/Cake/Controller/Controller.php(473): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /home/ep/EP-seminarska/src/lib/Cake/Routing/Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#3 /home/ep/EP-seminarska/src/lib/Cake/Routing/Dispatcher.php(86): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /home/ep/EP-seminarska/src/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-02-05 08:11:12 Error: [MissingActionException] Action UsersController::favicon.ico() could not be found.
+#0 /home/ep/EP-seminarska/src/lib/Cake/Routing/Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#1 /home/ep/EP-seminarska/src/lib/Cake/Routing/Dispatcher.php(86): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/ep/EP-seminarska/src/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-02-05 08:11:26 Error: [MissingActionException] Action UsersController::favicon.ico() could not be found.
+#0 /home/ep/EP-seminarska/src/lib/Cake/Routing/Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#1 /home/ep/EP-seminarska/src/lib/Cake/Routing/Dispatcher.php(86): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/ep/EP-seminarska/src/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-02-05 08:44:46 Error: [MissingActionException] Action UsersController::favicon.ico() could not be found.
+#0 /home/ep/EP-seminarska/src/lib/Cake/Routing/Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#1 /home/ep/EP-seminarska/src/lib/Cake/Routing/Dispatcher.php(86): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/ep/EP-seminarska/src/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-02-05 08:44:46 Error: [MissingActionException] Action UsersController::favicon.ico() could not be found.
+#0 /home/ep/EP-seminarska/src/lib/Cake/Routing/Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#1 /home/ep/EP-seminarska/src/lib/Cake/Routing/Dispatcher.php(86): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/ep/EP-seminarska/src/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-02-05 08:48:43 Error: [NotFoundException] Invalid user
+#0 [internal function]: UsersController->edit('favicon.ico')
+#1 /home/ep/EP-seminarska/src/lib/Cake/Controller/Controller.php(473): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /home/ep/EP-seminarska/src/lib/Cake/Routing/Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#3 /home/ep/EP-seminarska/src/lib/Cake/Routing/Dispatcher.php(86): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /home/ep/EP-seminarska/src/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-02-05 08:48:43 Error: [NotFoundException] Invalid user
+#0 [internal function]: UsersController->edit('favicon.ico')
+#1 /home/ep/EP-seminarska/src/lib/Cake/Controller/Controller.php(473): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /home/ep/EP-seminarska/src/lib/Cake/Routing/Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#3 /home/ep/EP-seminarska/src/lib/Cake/Routing/Dispatcher.php(86): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /home/ep/EP-seminarska/src/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-02-05 08:52:44 Error: [MissingViewException] View file "/home/ep/EP-seminarska/src/app/View/Orders/view.ctp" is missing.
+#0 /home/ep/EP-seminarska/src/lib/Cake/View/View.php(360): View->_getViewFileName(NULL)
+#1 /home/ep/EP-seminarska/src/lib/Cake/Controller/Controller.php(900): View->render(NULL, NULL)
+#2 /home/ep/EP-seminarska/src/lib/Cake/Routing/Dispatcher.php(111): Controller->render()
+#3 /home/ep/EP-seminarska/src/lib/Cake/Routing/Dispatcher.php(86): Dispatcher->_invoke(Object(OrdersController), Object(CakeRequest), Object(CakeResponse))
+#4 /home/ep/EP-seminarska/src/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-02-05 08:52:44 Error: [MissingViewException] View file "/home/ep/EP-seminarska/src/app/View/Orders/view.ctp" is missing.
+#0 /home/ep/EP-seminarska/src/lib/Cake/View/View.php(360): View->_getViewFileName(NULL)
+#1 /home/ep/EP-seminarska/src/lib/Cake/Controller/Controller.php(900): View->render(NULL, NULL)
+#2 /home/ep/EP-seminarska/src/lib/Cake/Routing/Dispatcher.php(111): Controller->render()
+#3 /home/ep/EP-seminarska/src/lib/Cake/Routing/Dispatcher.php(86): Dispatcher->_invoke(Object(OrdersController), Object(CakeRequest), Object(CakeResponse))
+#4 /home/ep/EP-seminarska/src/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-02-05 08:52:44 Error: [MissingViewException] View file "/home/ep/EP-seminarska/src/app/View/Orders/view.ctp" is missing.
+#0 /home/ep/EP-seminarska/src/lib/Cake/View/View.php(360): View->_getViewFileName(NULL)
+#1 /home/ep/EP-seminarska/src/lib/Cake/Controller/Controller.php(900): View->render(NULL, NULL)
+#2 /home/ep/EP-seminarska/src/lib/Cake/Routing/Dispatcher.php(111): Controller->render()
+#3 /home/ep/EP-seminarska/src/lib/Cake/Routing/Dispatcher.php(86): Dispatcher->_invoke(Object(OrdersController), Object(CakeRequest), Object(CakeResponse))
+#4 /home/ep/EP-seminarska/src/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-02-05 08:55:16 Error: [NotFoundException] Invalid item
+#0 [internal function]: ItemsController->edit('favicon.ico')
+#1 /home/ep/EP-seminarska/src/lib/Cake/Controller/Controller.php(473): ReflectionMethod->invokeArgs(Object(ItemsController), Array)
+#2 /home/ep/EP-seminarska/src/lib/Cake/Routing/Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#3 /home/ep/EP-seminarska/src/lib/Cake/Routing/Dispatcher.php(86): Dispatcher->_invoke(Object(ItemsController), Object(CakeRequest), Object(CakeResponse))
+#4 /home/ep/EP-seminarska/src/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-02-05 08:55:16 Error: [NotFoundException] Invalid item
+#0 [internal function]: ItemsController->edit('favicon.ico')
+#1 /home/ep/EP-seminarska/src/lib/Cake/Controller/Controller.php(473): ReflectionMethod->invokeArgs(Object(ItemsController), Array)
+#2 /home/ep/EP-seminarska/src/lib/Cake/Routing/Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#3 /home/ep/EP-seminarska/src/lib/Cake/Routing/Dispatcher.php(86): Dispatcher->_invoke(Object(ItemsController), Object(CakeRequest), Object(CakeResponse))
+#4 /home/ep/EP-seminarska/src/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-02-05 08:59:55 Error: [MissingViewException] View file "/home/ep/EP-seminarska/src/app/View/Orders/edit.ctp" is missing.
+#0 /home/ep/EP-seminarska/src/lib/Cake/View/View.php(360): View->_getViewFileName(NULL)
+#1 /home/ep/EP-seminarska/src/lib/Cake/Controller/Controller.php(900): View->render(NULL, NULL)
+#2 /home/ep/EP-seminarska/src/lib/Cake/Routing/Dispatcher.php(111): Controller->render()
+#3 /home/ep/EP-seminarska/src/lib/Cake/Routing/Dispatcher.php(86): Dispatcher->_invoke(Object(OrdersController), Object(CakeRequest), Object(CakeResponse))
+#4 /home/ep/EP-seminarska/src/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-02-05 08:59:55 Error: [MissingViewException] View file "/home/ep/EP-seminarska/src/app/View/Orders/edit.ctp" is missing.
+#0 /home/ep/EP-seminarska/src/lib/Cake/View/View.php(360): View->_getViewFileName(NULL)
+#1 /home/ep/EP-seminarska/src/lib/Cake/Controller/Controller.php(900): View->render(NULL, NULL)
+#2 /home/ep/EP-seminarska/src/lib/Cake/Routing/Dispatcher.php(111): Controller->render()
+#3 /home/ep/EP-seminarska/src/lib/Cake/Routing/Dispatcher.php(86): Dispatcher->_invoke(Object(OrdersController), Object(CakeRequest), Object(CakeResponse))
+#4 /home/ep/EP-seminarska/src/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-02-05 08:59:55 Error: [MissingViewException] View file "/home/ep/EP-seminarska/src/app/View/Orders/edit.ctp" is missing.
+#0 /home/ep/EP-seminarska/src/lib/Cake/View/View.php(360): View->_getViewFileName(NULL)
+#1 /home/ep/EP-seminarska/src/lib/Cake/Controller/Controller.php(900): View->render(NULL, NULL)
+#2 /home/ep/EP-seminarska/src/lib/Cake/Routing/Dispatcher.php(111): Controller->render()
+#3 /home/ep/EP-seminarska/src/lib/Cake/Routing/Dispatcher.php(86): Dispatcher->_invoke(Object(OrdersController), Object(CakeRequest), Object(CakeResponse))
+#4 /home/ep/EP-seminarska/src/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-02-05 09:03:10 Error: [MissingViewException] View file "/home/ep/EP-seminarska/src/app/View/Orders/edit.ctp" is missing.
+#0 /home/ep/EP-seminarska/src/lib/Cake/View/View.php(360): View->_getViewFileName(NULL)
+#1 /home/ep/EP-seminarska/src/lib/Cake/Controller/Controller.php(900): View->render(NULL, NULL)
+#2 /home/ep/EP-seminarska/src/lib/Cake/Routing/Dispatcher.php(111): Controller->render()
+#3 /home/ep/EP-seminarska/src/lib/Cake/Routing/Dispatcher.php(86): Dispatcher->_invoke(Object(OrdersController), Object(CakeRequest), Object(CakeResponse))
+#4 /home/ep/EP-seminarska/src/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-02-05 09:03:16 Error: [MissingViewException] View file "/home/ep/EP-seminarska/src/app/View/Orders/edit.ctp" is missing.
+#0 /home/ep/EP-seminarska/src/lib/Cake/View/View.php(360): View->_getViewFileName(NULL)
+#1 /home/ep/EP-seminarska/src/lib/Cake/Controller/Controller.php(900): View->render(NULL, NULL)
+#2 /home/ep/EP-seminarska/src/lib/Cake/Routing/Dispatcher.php(111): Controller->render()
+#3 /home/ep/EP-seminarska/src/lib/Cake/Routing/Dispatcher.php(86): Dispatcher->_invoke(Object(OrdersController), Object(CakeRequest), Object(CakeResponse))
+#4 /home/ep/EP-seminarska/src/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-02-05 09:32:02 Error: [MissingTableException] Database table item_orders for model ItemOrder was not found.
+#0 /home/ep/EP-seminarska/src/lib/Cake/Model/Model.php(3258): Model->setSource('item_orders')
+#1 /home/ep/EP-seminarska/src/lib/Cake/Model/Datasource/DboSource.php(1026): Model->getDataSource()
+#2 /home/ep/EP-seminarska/src/lib/Cake/Model/Model.php(2483): DboSource->read(Object(Order), Array)
+#3 /home/ep/EP-seminarska/src/lib/Cake/Model/Model.php(1436): Model->find('first', Array)
+#4 /home/ep/EP-seminarska/src/app/Controller/OrdersController.php(15): Model->read()
+#5 [internal function]: OrdersController->view('1')
+#6 /home/ep/EP-seminarska/src/lib/Cake/Controller/Controller.php(473): ReflectionMethod->invokeArgs(Object(OrdersController), Array)
+#7 /home/ep/EP-seminarska/src/lib/Cake/Routing/Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#8 /home/ep/EP-seminarska/src/lib/Cake/Routing/Dispatcher.php(86): Dispatcher->_invoke(Object(OrdersController), Object(CakeRequest), Object(CakeResponse))
+#9 /home/ep/EP-seminarska/src/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2012-02-05 09:33:21 Error: [MissingTableException] Database table item_orders for model ItemOrder was not found.
+#0 /home/ep/EP-seminarska/src/lib/Cake/Model/Model.php(3258): Model->setSource('item_orders')
+#1 /home/ep/EP-seminarska/src/lib/Cake/Model/Datasource/DboSource.php(1026): Model->getDataSource()
+#2 /home/ep/EP-seminarska/src/lib/Cake/Model/Model.php(2483): DboSource->read(Object(Order), Array)
+#3 /home/ep/EP-seminarska/src/lib/Cake/Model/Model.php(1436): Model->find('first', Array)
+#4 /home/ep/EP-seminarska/src/app/Controller/OrdersController.php(15): Model->read()
+#5 [internal function]: OrdersController->view('1')
+#6 /home/ep/EP-seminarska/src/lib/Cake/Controller/Controller.php(473): ReflectionMethod->invokeArgs(Object(OrdersController), Array)
+#7 /home/ep/EP-seminarska/src/lib/Cake/Routing/Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#8 /home/ep/EP-seminarska/src/lib/Cake/Routing/Dispatcher.php(86): Dispatcher->_invoke(Object(OrdersController), Object(CakeRequest), Object(CakeResponse))
+#9 /home/ep/EP-seminarska/src/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2012-02-05 09:34:07 Error: [MissingTableException] Database table item_orders for model ItemOrder was not found.
+#0 /home/ep/EP-seminarska/src/lib/Cake/Model/Model.php(3258): Model->setSource('item_orders')
+#1 /home/ep/EP-seminarska/src/lib/Cake/Model/Datasource/DboSource.php(1026): Model->getDataSource()
+#2 /home/ep/EP-seminarska/src/lib/Cake/Model/Model.php(2483): DboSource->read(Object(Order), Array)
+#3 /home/ep/EP-seminarska/src/app/Controller/OrdersController.php(9): Model->find('all')
+#4 [internal function]: OrdersController->index()
+#5 /home/ep/EP-seminarska/src/lib/Cake/Controller/Controller.php(473): ReflectionMethod->invokeArgs(Object(OrdersController), Array)
+#6 /home/ep/EP-seminarska/src/lib/Cake/Routing/Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#7 /home/ep/EP-seminarska/src/lib/Cake/Routing/Dispatcher.php(86): Dispatcher->_invoke(Object(OrdersController), Object(CakeRequest), Object(CakeResponse))
+#8 /home/ep/EP-seminarska/src/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2012-02-05 09:34:11 Error: [MissingTableException] Database table item_orders for model ItemOrder was not found.
+#0 /home/ep/EP-seminarska/src/lib/Cake/Model/Model.php(3258): Model->setSource('item_orders')
+#1 /home/ep/EP-seminarska/src/lib/Cake/Model/Datasource/DboSource.php(1026): Model->getDataSource()
+#2 /home/ep/EP-seminarska/src/lib/Cake/Model/Model.php(2483): DboSource->read(Object(Order), Array)
+#3 /home/ep/EP-seminarska/src/app/Controller/OrdersController.php(9): Model->find('all')
+#4 [internal function]: OrdersController->index()
+#5 /home/ep/EP-seminarska/src/lib/Cake/Controller/Controller.php(473): ReflectionMethod->invokeArgs(Object(OrdersController), Array)
+#6 /home/ep/EP-seminarska/src/lib/Cake/Routing/Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#7 /home/ep/EP-seminarska/src/lib/Cake/Routing/Dispatcher.php(86): Dispatcher->_invoke(Object(OrdersController), Object(CakeRequest), Object(CakeResponse))
+#8 /home/ep/EP-seminarska/src/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2012-02-05 09:34:53 Error: [MissingTableException] Database table item_orders for model ItemOrder was not found.
+#0 /home/ep/EP-seminarska/src/lib/Cake/Model/Model.php(3258): Model->setSource('item_orders')
+#1 /home/ep/EP-seminarska/src/lib/Cake/Model/Datasource/DboSource.php(1026): Model->getDataSource()
+#2 /home/ep/EP-seminarska/src/lib/Cake/Model/Model.php(2483): DboSource->read(Object(Order), Array)
+#3 /home/ep/EP-seminarska/src/app/Controller/OrdersController.php(9): Model->find('all')
+#4 [internal function]: OrdersController->index()
+#5 /home/ep/EP-seminarska/src/lib/Cake/Controller/Controller.php(473): ReflectionMethod->invokeArgs(Object(OrdersController), Array)
+#6 /home/ep/EP-seminarska/src/lib/Cake/Routing/Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#7 /home/ep/EP-seminarska/src/lib/Cake/Routing/Dispatcher.php(86): Dispatcher->_invoke(Object(OrdersController), Object(CakeRequest), Object(CakeResponse))
+#8 /home/ep/EP-seminarska/src/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2012-02-05 09:34:57 Error: [MissingTableException] Database table item_orders for model ItemOrder was not found.
+#0 /home/ep/EP-seminarska/src/lib/Cake/Model/Model.php(3258): Model->setSource('item_orders')
+#1 /home/ep/EP-seminarska/src/lib/Cake/Model/Datasource/DboSource.php(1026): Model->getDataSource()
+#2 /home/ep/EP-seminarska/src/lib/Cake/Model/Model.php(2483): DboSource->read(Object(Order), Array)
+#3 /home/ep/EP-seminarska/src/app/Controller/OrdersController.php(9): Model->find('all')
+#4 [internal function]: OrdersController->index()
+#5 /home/ep/EP-seminarska/src/lib/Cake/Controller/Controller.php(473): ReflectionMethod->invokeArgs(Object(OrdersController), Array)
+#6 /home/ep/EP-seminarska/src/lib/Cake/Routing/Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#7 /home/ep/EP-seminarska/src/lib/Cake/Routing/Dispatcher.php(86): Dispatcher->_invoke(Object(OrdersController), Object(CakeRequest), Object(CakeResponse))
+#8 /home/ep/EP-seminarska/src/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2012-02-05 09:35:03 Error: [MissingTableException] Database table item_orders for model ItemOrder was not found.
+#0 /home/ep/EP-seminarska/src/lib/Cake/Model/Model.php(3258): Model->setSource('item_orders')
+#1 /home/ep/EP-seminarska/src/lib/Cake/Model/Datasource/DboSource.php(1026): Model->getDataSource()
+#2 /home/ep/EP-seminarska/src/lib/Cake/Model/Model.php(2483): DboSource->read(Object(Order), Array)
+#3 /home/ep/EP-seminarska/src/app/Controller/OrdersController.php(9): Model->find('all')
+#4 [internal function]: OrdersController->index()
+#5 /home/ep/EP-seminarska/src/lib/Cake/Controller/Controller.php(473): ReflectionMethod->invokeArgs(Object(OrdersController), Array)
+#6 /home/ep/EP-seminarska/src/lib/Cake/Routing/Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#7 /home/ep/EP-seminarska/src/lib/Cake/Routing/Dispatcher.php(86): Dispatcher->_invoke(Object(OrdersController), Object(CakeRequest), Object(CakeResponse))
+#8 /home/ep/EP-seminarska/src/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2012-02-05 09:36:09 Error: [MissingTableException] Database table item_orders for model ItemOrder was not found.
+#0 /home/ep/EP-seminarska/src/lib/Cake/Model/Model.php(3258): Model->setSource('item_orders')
+#1 /home/ep/EP-seminarska/src/lib/Cake/Model/Datasource/DboSource.php(1026): Model->getDataSource()
+#2 /home/ep/EP-seminarska/src/lib/Cake/Model/Model.php(2483): DboSource->read(Object(Order), Array)
+#3 /home/ep/EP-seminarska/src/app/Controller/OrdersController.php(9): Model->find('all')
+#4 [internal function]: OrdersController->index()
+#5 /home/ep/EP-seminarska/src/lib/Cake/Controller/Controller.php(473): ReflectionMethod->invokeArgs(Object(OrdersController), Array)
+#6 /home/ep/EP-seminarska/src/lib/Cake/Routing/Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#7 /home/ep/EP-seminarska/src/lib/Cake/Routing/Dispatcher.php(86): Dispatcher->_invoke(Object(OrdersController), Object(CakeRequest), Object(CakeResponse))
+#8 /home/ep/EP-seminarska/src/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2012-02-05 09:36:12 Error: [MissingTableException] Database table item_orders for model ItemOrder was not found.
+#0 /home/ep/EP-seminarska/src/lib/Cake/Model/Model.php(3258): Model->setSource('item_orders')
+#1 /home/ep/EP-seminarska/src/lib/Cake/Model/Datasource/DboSource.php(1026): Model->getDataSource()
+#2 /home/ep/EP-seminarska/src/lib/Cake/Model/Model.php(2483): DboSource->read(Object(Order), Array)
+#3 /home/ep/EP-seminarska/src/app/Controller/OrdersController.php(9): Model->find('all')
+#4 [internal function]: OrdersController->index()
+#5 /home/ep/EP-seminarska/src/lib/Cake/Controller/Controller.php(473): ReflectionMethod->invokeArgs(Object(OrdersController), Array)
+#6 /home/ep/EP-seminarska/src/lib/Cake/Routing/Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#7 /home/ep/EP-seminarska/src/lib/Cake/Routing/Dispatcher.php(86): Dispatcher->_invoke(Object(OrdersController), Object(CakeRequest), Object(CakeResponse))
+#8 /home/ep/EP-seminarska/src/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2012-02-05 10:05:19 Error: [MissingTableException] Database table item_orders for model ItemOrder was not found.
+#0 /home/ep/EP-seminarska/src/lib/Cake/Model/Model.php(3258): Model->setSource('item_orders')
+#1 /home/ep/EP-seminarska/src/lib/Cake/Model/Datasource/DboSource.php(1026): Model->getDataSource()
+#2 /home/ep/EP-seminarska/src/lib/Cake/Model/Model.php(2483): DboSource->read(Object(Order), Array)
+#3 /home/ep/EP-seminarska/src/lib/Cake/Model/Model.php(1436): Model->find('first', Array)
+#4 /home/ep/EP-seminarska/src/app/Controller/OrdersController.php(15): Model->read()
+#5 [internal function]: OrdersController->view('1')
+#6 /home/ep/EP-seminarska/src/lib/Cake/Controller/Controller.php(473): ReflectionMethod->invokeArgs(Object(OrdersController), Array)
+#7 /home/ep/EP-seminarska/src/lib/Cake/Routing/Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#8 /home/ep/EP-seminarska/src/lib/Cake/Routing/Dispatcher.php(86): Dispatcher->_invoke(Object(OrdersController), Object(CakeRequest), Object(CakeResponse))
+#9 /home/ep/EP-seminarska/src/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2012-02-05 10:14:16 Error: [MissingActionException] Action OrdersController::favicon.ico() could not be found.
+#0 /home/ep/EP-seminarska/src/lib/Cake/Routing/Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#1 /home/ep/EP-seminarska/src/lib/Cake/Routing/Dispatcher.php(86): Dispatcher->_invoke(Object(OrdersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/ep/EP-seminarska/src/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-02-05 10:14:16 Error: [MissingActionException] Action OrdersController::favicon.ico() could not be found.
+#0 /home/ep/EP-seminarska/src/lib/Cake/Routing/Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#1 /home/ep/EP-seminarska/src/lib/Cake/Routing/Dispatcher.php(86): Dispatcher->_invoke(Object(OrdersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/ep/EP-seminarska/src/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-02-05 10:14:19 Error: [MissingActionException] Action OrdersController::5() could not be found.
+#0 /home/ep/EP-seminarska/src/lib/Cake/Routing/Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#1 /home/ep/EP-seminarska/src/lib/Cake/Routing/Dispatcher.php(86): Dispatcher->_invoke(Object(OrdersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/ep/EP-seminarska/src/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-02-05 10:14:26 Error: [MissingActionException] Action OrdersController::44() could not be found.
+#0 /home/ep/EP-seminarska/src/lib/Cake/Routing/Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#1 /home/ep/EP-seminarska/src/lib/Cake/Routing/Dispatcher.php(86): Dispatcher->_invoke(Object(OrdersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/ep/EP-seminarska/src/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-02-05 10:14:39 Error: [MissingActionException] Action OrdersController::4() could not be found.
+#0 /home/ep/EP-seminarska/src/lib/Cake/Routing/Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#1 /home/ep/EP-seminarska/src/lib/Cake/Routing/Dispatcher.php(86): Dispatcher->_invoke(Object(OrdersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/ep/EP-seminarska/src/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-02-05 10:14:44 Error: [MissingActionException] Action OrdersController::id() could not be found.
+#0 /home/ep/EP-seminarska/src/lib/Cake/Routing/Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#1 /home/ep/EP-seminarska/src/lib/Cake/Routing/Dispatcher.php(86): Dispatcher->_invoke(Object(OrdersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/ep/EP-seminarska/src/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-02-05 10:14:44 Error: [MissingActionException] Action OrdersController::id() could not be found.
+#0 /home/ep/EP-seminarska/src/lib/Cake/Routing/Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#1 /home/ep/EP-seminarska/src/lib/Cake/Routing/Dispatcher.php(86): Dispatcher->_invoke(Object(OrdersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/ep/EP-seminarska/src/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-02-05 10:14:45 Error: [MissingActionException] Action OrdersController::id() could not be found.
+#0 /home/ep/EP-seminarska/src/lib/Cake/Routing/Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#1 /home/ep/EP-seminarska/src/lib/Cake/Routing/Dispatcher.php(86): Dispatcher->_invoke(Object(OrdersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/ep/EP-seminarska/src/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}

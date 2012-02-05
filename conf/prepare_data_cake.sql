@@ -225,4 +225,7 @@ INSERT INTO `orders` (`id`, `user_id`, `date`, `state`) VALUES ('2','2','2012-01
 INSERT INTO `orders` (`id`, `user_id`, `date`, `state`) VALUES ('3','3','2012-01-03 12:00:00','3');
 INSERT INTO `orders` (`id`, `user_id`, `date`, `state`) VALUES ('4','4','2012-01-04 12:00:00','4');
 
-
+INSERT INTO `items_orders` (`id`, `order_id`, `item_id`, `quantity`) VALUES ('1', '1', '40', '2');
+INSERT INTO `items_orders` (`id`, `order_id`, `item_id`, `quantity`) VALUES ('2', '2', '23', '6');
+INSERT INTO `items_orders` (`id`, `order_id`, `item_id`, `quantity`) VALUES ('3', '3', '12', '27');
+INSERT INTO `items_orders` (`id`, `order_id`, `item_id`, `quantity`) VALUES ('4', '4', '6', '23');
