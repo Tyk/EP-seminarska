@@ -16,7 +16,7 @@ class OrdersController extends AppController {
 		if($id != NULL)
 		{
 			$this->Order->id = $id;
-			$this->set('order', $this->Order->read());
+			$this->set('selected_order', $this->Order->read());
 			$this->set('id', $id);
 			$this->set('show_details', true);
 		}

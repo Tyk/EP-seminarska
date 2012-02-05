@@ -41,7 +41,8 @@
 			<th>Cena</th>
 		</tr>
 
-		<?php foreach ($order['Item'] as $item): ?>
+		<?php foreach ($selected_order['Item'] as $item): ?>
+		
 		<tr>
 			<td><?php echo $item['name']; ?></td>
 			<td><?php echo $item['ItemsOrder']['quantity'] ?></td>
