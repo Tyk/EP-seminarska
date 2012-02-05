@@ -958,3 +958,36 @@
 #3 /projects/cakeshop/src/lib/Cake/Routing/Dispatcher.php(86): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
 #4 /projects/cakeshop/src/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #5 {main}
+2012-02-05 10:54:01 Error: [NotFoundException] Invalid item
+#0 [internal function]: ItemsController->view('favicon.ico')
+#1 /var/www/cakeshop/src/lib/Cake/Controller/Controller.php(473): ReflectionMethod->invokeArgs(Object(ItemsController), Array)
+#2 /var/www/cakeshop/src/lib/Cake/Routing/Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/cakeshop/src/lib/Cake/Routing/Dispatcher.php(86): Dispatcher->_invoke(Object(ItemsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cakeshop/src/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-02-05 11:03:01 Error: [NotFoundException] Invalid item
+#0 [internal function]: ItemsController->view('favicon.ico')
+#1 /var/www/cakeshop/src/lib/Cake/Controller/Controller.php(473): ReflectionMethod->invokeArgs(Object(ItemsController), Array)
+#2 /var/www/cakeshop/src/lib/Cake/Routing/Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/cakeshop/src/lib/Cake/Routing/Dispatcher.php(86): Dispatcher->_invoke(Object(ItemsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cakeshop/src/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-02-05 11:03:04 Error: [MissingActionException] Action UsersController::favicon.ico() could not be found.
+#0 /var/www/cakeshop/src/lib/Cake/Routing/Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/cakeshop/src/lib/Cake/Routing/Dispatcher.php(86): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/cakeshop/src/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-02-05 11:03:16 Error: [NotFoundException] Invalid item
+#0 [internal function]: ItemsController->view('favicon.ico')
+#1 /var/www/cakeshop/src/lib/Cake/Controller/Controller.php(473): ReflectionMethod->invokeArgs(Object(ItemsController), Array)
+#2 /var/www/cakeshop/src/lib/Cake/Routing/Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/cakeshop/src/lib/Cake/Routing/Dispatcher.php(86): Dispatcher->_invoke(Object(ItemsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cakeshop/src/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-02-05 11:05:53 Error: [NotFoundException] Invalid item
+#0 [internal function]: ItemsController->view('favicon.ico')
+#1 /var/www/cakeshop/src/lib/Cake/Controller/Controller.php(473): ReflectionMethod->invokeArgs(Object(ItemsController), Array)
+#2 /var/www/cakeshop/src/lib/Cake/Routing/Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/cakeshop/src/lib/Cake/Routing/Dispatcher.php(86): Dispatcher->_invoke(Object(ItemsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cakeshop/src/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
