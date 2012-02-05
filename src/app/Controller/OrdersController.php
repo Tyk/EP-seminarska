@@ -25,5 +25,14 @@ class OrdersController extends AppController {
 	public function edit($id) {
 		$this->Order->id = $id;
 		$this->set('id', $id);
+		$this->set('selected_order', $this->Order->read());
+	}
+
+	public function changeState($id, $state) {
+		$this->Order->id = $id;		
+		$this->Order->read();
+		$this->Order->saveField('state', $state);
+		$this->Order->save();
+		$this->redirect(array('controller' => 'orders', 'action' => 'view'));
 	}
 }

@@ -24,7 +24,32 @@
 		<td><?php echo $order['Order']['state']; ?></td>
 		<td>
 			<?php echo $this->Html->link('Podrobnosti', array('action' => 'view', $order['Order']['id'])); ?> |
-			<?php echo $this->Html->link('Spremeni stanje', array('action' => 'edit', $order['Order']['id'])); ?>
+			<?php
+				if(AuthComponent::user('role') == "salesman"){
+					if ($order['Order']['state'] == "ODDANO") {
+						echo $this->Html->link('ZAVRNI', array('action' => 'changeState', $order['Order']['id'], 'ZAVRNI'));
+						echo "/";
+						echo $this->Html->link('V OBDELAVI', array('action' => 'changeState', $order['Order']['id'], 'V OBDELAVI'));
+					}
+					if ($order['Order']['state'] == "PREKLICANO") {
+						echo $this->Html->link('ZBRISI', array('action' => 'changeState', $order['Order']['id'], 'ZBRISI'));
+					}
+					if ($order['Order']['state'] == "V OBDELAVI") {
+						echo $this->Html->link('POSLANO', array('action' => 'changeState', $order['Order']['id'], $order['Order']['state']));
+					}
+					if ($order['Order']['state'] == "POSLANO") {
+						echo $this->Html->link('ZAPISI', array('action' => 'changeState', $order['Order']['id'], $order['Order']['state']));
+					}
+					if ($order['Order']['state'] == "ZAVRNJENO") {
+						echo $this->Html->link('ZBRISI', array('action' => 'changeState', $order['Order']['id'], $order['Order']['state']));
+					}
+				}
+				else if(AuthComponent::user('role') == "client") {
+					if ($order['Order']['state'] == "ODDANO") {
+						echo "PREKLICI";
+					}
+				}
+			?>
 		</td>
 	</tr>
 	<?php endforeach; ?>
