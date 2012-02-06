@@ -2,7 +2,7 @@
 class ItemsController extends AppController 
 {
 	var $paginate = array(
-		'limit' => 15,
+		'limit' => 5,
 		'fields' => array('Item.id', 'Item.price','Item.name'),
 		'order' => array(
 		'Item.name' => 'asc'

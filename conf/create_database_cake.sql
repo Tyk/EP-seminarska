@@ -65,6 +65,6 @@ CREATE TABLE `images` (
   `id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
   `item_id` int(11) NOT NULL,
   `index` int(11) NOT NULL,
-  `image_url` varchar(255) COLLATE utf8_slovenian_ci NOT NULL
+  `image_url` varchar(255) COLLATE utf8_slovenian_ci
 );
 

@@ -8,7 +8,8 @@
 	</div>
 	<div>
 		<?php 
-			if(AuthComponent::user('role') == 'salesman') echo $this->Html->link("new", array('controller' => 'items', 'action' => 'add'));
+			if(AuthComponent::user('role') == 'salesman') 
+				echo $this->Html->link("new", array('controller' => 'items', 'action' => 'add'));
 		?> 
 	</div>
 	<div>	
@@ -29,7 +30,7 @@
 				$item_image_url = "/img/no-image.gif";
 				if(isset($item['Image'][0]['image_url'])) $item_image_url = $item['Image'][0]['image_url'];
 			?>
-			<img width="20px" height="20px" src="<?php echo $item_image_url; ?>"/>
+			<img width="50px" height="50px" src="<?php echo $item_image_url; ?>"/>
             <?php 
 				echo $this->Html->link($item['Item']['name'], array('controller' => 'items', 'action' => 'view',$item['Item']['id'])); 
 				echo " | ";				
