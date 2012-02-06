@@ -31,13 +31,15 @@ echo $scripts_for_layout
 			<?php echo $this->Session->flash(); ?>
 		</div>
 		<div id="content">
-		<?php echo $content_for_layout ?>
-		</div>
-		<div id="footer">
-			<?php echo $this->Html->link("Legal", array('controller' => 'about', 'action' => 'legal')); 
-			echo "|";
-			echo $this->Html->link("Authors", array('controller' => 'about', 'action' => 'authors'));	
-			?>		
+			<div id="inner-content">	
+				<?php echo $content_for_layout ?>
+			</div>
+			<div id="footer">
+				<?php echo $this->Html->link("Legal", array('controller' => 'about', 'action' => 'legal')); 
+				echo "|";
+				echo $this->Html->link("Authors", array('controller' => 'about', 'action' => 'authors'));	
+				?>		
+			</div>
 		</div>
 	</div>
 </body>

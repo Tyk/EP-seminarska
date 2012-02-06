@@ -5,11 +5,9 @@ class OrdersController extends AppController {
 	public $helpers = array('Html', 'Form');
 	public $components = array('Session');
 
-	public function index() {
-	}
+	public function index($id=NULL)
+	{
 
-	public function view($id=NULL) 
-	{	
 		$this->set('orders', $this->Order->find('all'));
 		$this->set('show_details', false);
 
@@ -33,6 +31,6 @@ class OrdersController extends AppController {
 		$this->Order->read();
 		$this->Order->saveField('state', $state);
 		$this->Order->save();
-		$this->redirect(array('controller' => 'orders', 'action' => 'view'));
+		$this->redirect(array('controller' => 'orders', 'action' => 'index'));
 	}
 }

@@ -1,7 +1,7 @@
 <?php
 class HomeController extends AppController 
 {
-    public function index() 
+	public function index() 
 	{		
 		CakeLog::write('debug', 'processing: homeController->index');
 		
@@ -17,5 +17,5 @@ class HomeController extends AppController
 		{
 			$this->redirect(array('controller' => 'items', 'action' => 'index'));	
 		}				
-    }
+	}
 }
