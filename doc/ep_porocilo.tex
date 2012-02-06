@@ -28,7 +28,7 @@
 \newcommand{\prviindeks} {63000214}
 \newcommand{\drugiavtor} {Igor Jončevski}
 \newcommand{\drugiindeks}{63070420}
-\newcommand{\tretjiavtor} {Mia Erbus}
+\newcommand{\tretjiavtor}{Mia Erbus}
 \newcommand{\tretjiindeks}{63050184}
 \newcommand{\kraj}       {Ljubljana}
 
@@ -112,7 +112,35 @@ pdfkeywords={spletna prodajalna, PHP, SSL, MySQL}, a4paper, pagebackref=true, un
 % ##################
 \chapter{Uvod}
 
-{\it V uvodu podajte kratko in jedrnato predstavitev teme seminarske naloge, navedite seznam uporabljene tehnologije ter naštejte uporabljene mehanizme za nadzor dostopa.}
+%{\it V uvodu podajte kratko in jedrnato predstavitev teme seminarske naloge, navedite seznam uporabljene tehnologije ter naštejte uporabljene mehanizme za nadzor dostopa.}
+
+Izdelali smo aplikacijo CakeShop, ki jo lahko uporabljajo prodajalci tort.
+
+\section{Uporaba tehnologij}
+
+Pri izdelavi smo uporabili tehnologije:
+
+\begin{itemize}
+  \item PHP z ogrodjem CakePHP,
+  \item SQL (natančneje MySQL),
+  \item Apache2,
+  \item MVC (Model View Controller) pristop,
+  \item REST,
+  \item ORM,
+  \item CRUD,
+  \item Session in
+  \item GitHub za izmenjavo datotek med člani skupine.
+\end{itemize}
+
+\section{Mehanizmi za nadzor dostopa}
+
+Mehanizmi za nadzor dostopa:
+\begin{itemize}
+  \item SSL/TLS/HTTPS,
+  \item preverjanje avtentičnosti v podatkovni bazi z uporabniškim imenom in "hashed" geslom,
+  \item preverjanje avtentičnosti strežnika z digitalnim potrdilom in 
+  \item preverjenje identitete adiminstratorja in prodajalca z digitalnim potrdilom
+\end{itemize}
 
 % -----------------------------------------------------------------------------
 % ###################
@@ -122,17 +150,97 @@ pdfkeywords={spletna prodajalna, PHP, SSL, MySQL}, a4paper, pagebackref=true, un
 % -----------------------------------------------
 \chapter{Primeri uporabe}
 
-{\it Kratek in jedrnat opis vlog uporabnikov ter funkcionalnosti, ki so vsaki vlogi dostopne. Če ste implementirali funkcionalnosti, ki se točkujejo z dodatnimi točkami, jih posebej izpostavite.}
+%{\it Kratek in jedrnat opis vlog uporabnikov ter funkcionalnosti, ki so vsaki vlogi dostopne. Če ste implementirali funkcionalnosti, ki se točkujejo z dodatnimi točkami, jih posebej izpostavite.}
+
+Ustvarili smo tri uporabnike:
+\begin{enumerate}
+  \item Anonimni uporabnik
+  \item Stranka
+  \item Prodajalec
+  \item Administrator
+\end{enumerate}
+
+\section{Anonimni uporabnik}
+
+Vsak anonimni oz. neprijavljeni obiskovalec strani lahko brska med tortami, ki so opremljene s slikami. Implementirali smo tudi funkcijo iskanja med izdelki. Anonimni uporabnik ima možnost registracije uporabniškega imena in prijave.
+
+\section{Stranka}
+
+Ko se anonimni uporabnik prijavi, postane prijavljen uporabnik oz. stranka. Podobno kot anonimni uporabnik, brska med izdelki. Ko se odloči za nakup izdelka, se izvede dodajanje izdelka v košarico. V košarici lahko določi, koliko primerkov tega izdelka želi, v primeru, da si premisli, lahko izdelek tudi izbriše iz košarice. Ko je stranka zadovoljna z urejanjem izdelkov, gredo izdelki na blagajno (check-out).
+
+\section{Prodajalec}
+
+Prodajalec ima možnost dodajanja in urejanje izdelkov, urejanja naročil in dodajnja in urejanja strank.
+
+\section{Administrator}
+
+Administrator ima možnost dodajanja in urejanja prodajalcev ter strank.
+
+\section{Dodatne funkcionalnosti}
+
+Impletirali smo tudi nekaj dodatnih funkcij, in sicer:
+
+\begin{itemize}
+  \item iskanje izdelkov,
+  \item razdelitev prikaza izdelkov na posamezne strani (paginacija),
+  \item predstavitev izdelkov s slikami in
+  \item CSS lepotičenje.
+\end{itemize}
+
+Iskanje deluje z uporabo SQL pogoja LIKE po naslovu in opisu izdelka.
+
+Za preglednejši pregled nad izdelki smo s pomočjo CakePHP funkcije implementirali paginacijo izdelkov. Stranke in prodajalci lahko brskajo med izdelki tako, da se s kliki pomikajo naprej in nazaj.
+
+Predstavitev s slikami. V podatkovni bazi smo dodali tabelo slik. Vsak izdelek je lahko predstavljen brez slike (v tem primeru se mu dodeli privzeta slika), lahko pa z večimi slik, od katerih je samo ena prikazna. Vsak uporabnik lahko tudi naloži sliko s svojega računalnika.
+
+Dodali smo tudi CSS datoteko za vsak pogled (pogled stranke, prodajalca in administratorja.
 
 % -----------------------------------------------
 \chapter{Uporabniške pristopne točke}
 
-{\it Opis uporabniških pristopnih točk. Tukaj lahko dokumentirate uporabniški vmesnik za ključne primere uporabe, tako da zajamete zaslonske slike vaše aplikacije in jih opremite s komentarji.}
+%{\it Opis uporabniških pristopnih točk. Tukaj lahko dokumentirate uporabniški vmesnik za ključne primere uporabe, tako da zajamete zaslonske slike vaše aplikacije in jih opremite s komentarji.}
+
+\section{Prijava}
+
+Uporabnik se prijavi v sistem.
+
+\begin{figure}[htb]
+	\centering
+	\includegraphics[width=13cm]{Wireframes/cakeshop/pngs/010200-LoginAnonymous.png}
+	\caption{Prijava}
+\label{fig:1}
+\end{figure}
+
+\newpage
+
+\section{Prikaz izdelkov}
+
+Prikaz izdelkov s slikami in paginacijo.
+
+\begin{figure}[htb]
+	\centering
+	\includegraphics[width=13cm]{Wireframes/cakeshop/pngs/020200-CartViewClient.png}
+	\caption{Košarica}
+\label{fig:1}
+\end{figure}
+
+\section{Dodajanje v košarico}
+
+Dodajanje v košarico
+
+\section{Naročila}
+
+\begin{figure}[htb]
+	\centering
+	\includegraphics[width=13cm]{Wireframes/cakeshop/pngs/030300-OrdersSalesman.png}
+	\caption{Košarica}
+\label{fig:1}
+\end{figure}
 
 % -----------------------------------------------
 \chapter{Podatkovni model}
 
-{\it Slika logičnega podatkovnega modela (denimo iz programa MySQL Workbench) ter kratek opis tabel in obrazložitev netrivialnih atributov.}
+%{\it Slika logičnega podatkovnega modela (denimo iz programa MySQL Workbench) ter kratek opis tabel in obrazložitev netrivialnih atributov.}
 
 % -----------------------------------------------
 \chapter{Varnost sistema}
