@@ -6,10 +6,11 @@
 			echo $this->Form->end("Search");
 		?> 
 	</div>
-	<div>
+
+	<div class='actions'>
 		<?php 
 			if(AuthComponent::user('role') == 'salesman') 
-				echo $this->Html->link("new", array('controller' => 'items', 'action' => 'add'));
+				echo $this->Html->link("new", array('controller' => 'items', 'action' => 'add'), array('class' =>'add'));
 		?> 
 	</div>
 	<div>	

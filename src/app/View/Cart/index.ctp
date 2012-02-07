@@ -6,6 +6,10 @@
 		<?php 
 			echo $this->Form->postLink("Checkout", array('controller' => 'cart', 'action' => 'checkout'),
 			array(),"Are you sure you wish to checkout your cart?");
+
+			echo $this->Form->postLink("Clear", array('controller' => 'cart', 'action' => 'clear'),
+			array(),"Are you sure you wish to clear your cart?");
+
 		?>
 	</div>
 	<div>

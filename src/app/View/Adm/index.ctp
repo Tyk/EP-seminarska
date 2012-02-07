@@ -6,6 +6,6 @@
 		<?php echo $this->Html->link("Salesmen", array('controller' => 'users', 'action' => 'salesman_index')); ?>
 	</div>
 	<div>
-		<?php echo $this->Html->link("Deactivated", array('controller' => 'users', 'action' => 'deactivated_index')); ?>
+		<?php echo $this->Html->link("Not active", array('controller' => 'users', 'action' => 'deactivated_index')); ?>
 	</div>
 </div>

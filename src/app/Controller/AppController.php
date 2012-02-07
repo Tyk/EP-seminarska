@@ -11,26 +11,92 @@ class AppController extends Controller {
         )
     );
 
+	function checkItemsIndexOrView()
+	{
+		return (($this->name != 'Items')&&(($this->action != 'index')||($this->action != 'view')));
+	}
+
+	function checkAboutLegalOrAuthors()
+	{
+		return (($this->name != 'About')&&(($this->action != 'legal')||($this->action != 'authors')));
+	}
+
+	function checkHome()
+	{
+		return (($this->name != 'Home')&&($this->action != 'index'));
+	}
+
     function beforeFilter() 
 	{
- 		$this->Auth->allow('index', 'view');
-		$this->layout = 'default';
-		
-		if($this->Auth->loggedIn())
+		if(!isset($_SERVER['HTTPS'])||($_SERVER['HTTPS'] != 'on'))
 		{
-			if($this->Auth->user('role') == "admin")  $this->layout = 'adm';		
-			if($this->Auth->user('role') == "salesman")  $this->layout = 'sales';				
-		}
+			if( $this->checkHome() && $this->checkItemsIndexOrView() && $this->checkAboutLegalOrAuthors() )
+			{
+				$this->redirect('https://' . $_SERVER['SERVER_NAME'] . $this->here);
+			}
+		}	
+
+ 		$this->Auth->allow('index', 'view', 'showerror');
+		$this->layout = 'default';
 
 		$kosarica  = $this->Session->read("kosarica");
 		$sum = 0;
 		if(isset($kosarica))
 		{
-			foreach($kosarica as $item_id => $item_count)
-				$sum = $sum + $item_count;
+			foreach($kosarica as $item_id => $item_count) $sum = $sum + $item_count;
 		}
 		$this->set('items_in_cart', $sum);
+
+		if($this->Auth->loggedIn())
+		{
+
+			$roleACL = array(
+				'admin' => array('Adm' => '*','About' => '*','Home' => '*','Users' => '*','Messages' => '*'),
+				'client' => array('About' => '*', 'Cart' => '*', 'Home' => '*', 
+								  'Items' => array('index', 'view'), 
+								  'Orders' => array('index', 'set_preklicano'),
+								  'Users' => array('edit', 'logout'), 'Messages' => '*'),
+				'salesman' => array('About' => '*', 'Home' => '*', 'Sales'  => '*', 'Items'=>'*', 'Orders' => '*',
+									'Users' => array('clients_index','deactivated_index','add_client',
+													 'delete', 'edit', 'delete', 'login', 'logout'),
+									'Messages' => '*')
+				);
+
+//'About' => array('legal', 'authors')
+//'Adm' => array('index')
+//'Cart' => array('index', 'add', 'edit', 'checkout', 'clear')
+//'Home' => array('index')
+//'Images' => array('delete_from_item', 'add_to_item')
+//'Items' => array('index', 'unpublished_index', 'view', 'add', 'edit', 'delete')
+//'Orders' => array('index', 'edit', 'set_oddano', 'set_preklicano', 'set_vobdelavi',  'set_zavrnjeno', 'set_poslano', 'set_izbrisano')
+//'Sales' => array('index)
+//'Users' => array('index', 'clients_index','salesman_index','deactivated_index','add_client','delete', 'add_salesman', 'register', 'edit', 'delete', 'login', 'logout')
+
+			
+
+			$tmpRole = $this->Auth->user('role'); 
+			if($tmpRole == "admin")  $this->layout = 'adm';		
+			if($tmpRole == "salesman")  $this->layout = 'sales';		
+
+			if(!(isset($roleACL[$tmpRole])&&isset($roleACL[$tmpRole][$this->name])&&(($roleACL[$tmpRole][$this->name] == '*') ||  in_array($this->action,$roleACL[$tmpRole][$this->name])))) 
+			{
+				$this->redirect(array('controller' => 'messages', 'action' => 'showerror'));
+			}
+		}
+
     }
+
+
+/*
+		if($this->Auth->user('role') == 'client')	
+		{
+			if (in_array($this->action, array('clients_index','salesman_index','deactivated_index','add','delete')))
+			{
+				throw new MethodNotAllowedException(__('Sorry a client is not allowed to do that'));
+			}
+		}
+*/
+
 
     /** 
      * uploads files to the server 

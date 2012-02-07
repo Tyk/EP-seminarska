@@ -2,7 +2,10 @@
 <?php echo $this->Html->css('sortable'); ?>
 <?php echo $this->Html->css('users'); ?>
 <h4>Clients</h4>
-<?php echo $this->Html->link('new', array('controller' => 'users', 'action' => 'add_client')); ?>
+<div class='actions'>
+	<?php echo $this->Html->link("back", array('controller' => 'home', 'action' => 'index'), array('class' =>'btn_back'));?> 
+	<?php echo $this->Html->link('new', array('controller' => 'users', 'action' => 'add_client'), array('class' =>'btn_add'));?>
+</div>
 <table class="sortable" id="users_table" cellpadding="0" cellspacing="0">
 	<tr>
 		<th>Id</th>

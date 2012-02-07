@@ -2,6 +2,9 @@
 <?php echo $this->Html->css('sortable'); ?>
 <?php echo $this->Html->css('users'); ?>
 <h4>Deactivated</h4>
+<div class='actions'>
+	<?php echo $this->Html->link("back", array('controller' => 'home', 'action' => 'index'), array('class' =>'btn_back'));?> 
+</div>
 <table class="sortable" id="users_table" cellpadding="0" cellspacing="0">
 	<tr>
 		<th>Id</th>

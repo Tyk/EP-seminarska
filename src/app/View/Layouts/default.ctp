@@ -22,7 +22,10 @@ echo $scripts_for_layout;
 				{
 					echo $this->Html->link("Home", array('controller' => 'home', 'action' => 'index')); 
 					echo "|";
-					echo $this->Html->link("Cart[".$items_in_cart."]", array('controller' => 'cart', 'action' => 'index')); 
+					if(isset($items_in_cart))
+						echo $this->Html->link("Cart[".$items_in_cart."]", array('controller' => 'cart', 'action' => 'index')); 
+					else
+						echo $this->Html->link("Cart[0]", array('controller' => 'cart', 'action' => 'index')); 
 					echo "|";
 					echo $this->Html->link("Orders", array('controller' => 'orders', 'action' => 'index'));						
 					echo "|";
@@ -40,9 +43,15 @@ echo $scripts_for_layout;
 			</div>
 		</div>
 		<div class="delim" />
-		<div id="flash">
-			<?php echo $this->Session->flash(); ?>
-		</div>
+		<?php
+			$tmpFlash = $this->Session->flash(); 
+			if ($tmpFlash != "")				
+			{			
+				echo "<div id='flash' >";
+				echo $tmpFlash;			
+				echo "</div>";
+			}
+		?>
 		<div id="content">
 			<div id="inner-content">	
 				<?php echo $content_for_layout ?>

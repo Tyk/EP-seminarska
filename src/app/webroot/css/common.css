@@ -61,7 +61,7 @@ p{margin: 0 0 1em 0;}
 }
 .delim
 {
-	flaot:none;
+	float:none;
 	clear:both;
 }
 
@@ -71,6 +71,9 @@ p{margin: 0 0 1em 0;}
 	border-width:1px;
 	border-color: #f2f2f2;
 	padding: 20px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+
 }
 
 #inner-content
@@ -137,7 +140,15 @@ p{margin: 0 0 1em 0;}
 
 #flash
 {
-	background-color: #d0d000;
+	background-color:#fffff0;
+	border-color:#ffff99;
+	border-style:solid;
+	border-width:1px;
+	text-align: center;	
+	padding: 20px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	margin-bottom: 10px;
 }
 
 fieldset

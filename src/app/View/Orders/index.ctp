@@ -30,26 +30,23 @@
 			<?php
 				if(AuthComponent::user('role') == "salesman"){
 					if ($order['Order']['state'] == "ODDANO") {
-						echo $this->Form->postLink('ZAVRNI', array('action' => 'changeState', $order['Order']['id'], 'ZAVRNI'));
+						echo $this->Form->postLink('ZAVRNI', array('action' => 'set_zavrnjeno', $order['Order']['id']));
 						echo "/";
-						echo $this->Form->postLink('V OBDELAVI', array('action' => 'changeState', $order['Order']['id'], 'V OBDELAVI'));
+						echo $this->Form->postLink('V OBDELAVO', array('action' => 'set_vobdelavi', $order['Order']['id']));
 					}
 					if ($order['Order']['state'] == "PREKLICANO") {
-						echo $this->Form->postLink('ZBRISI', array('action' => 'changeState', $order['Order']['id'], 'ZBRISI'));
+						echo $this->Form->postLink('ZBRIŠI', array('action' => 'set_izbrisano', $order['Order']['id'], 'ZBRISI'));
 					}
 					if ($order['Order']['state'] == "V OBDELAVI") {
-						echo $this->Form->postLink('POSLANO', array('action' => 'changeState', $order['Order']['id'], 'POSLANO'));
-					}
-					if ($order['Order']['state'] == "POSLANO") {
-						echo $this->Form->postLink('ZAPISI', array('action' => 'changeState', $order['Order']['id'], 'ZAPISI'));
+						echo $this->Form->postLink('POŠLJI', array('action' => 'set_poslano', $order['Order']['id']));
 					}
 					if ($order['Order']['state'] == "ZAVRNJENO") {
-						echo $this->Form->postLink('ZBRISI', array('action' => 'changeState', $order['Order']['id'], 'ZBRISI'));
+						echo $this->Form->postLink('ZBRIŠI', array('action' => 'set_izbrisano', $order['Order']['id'], 'ZBRISI'));
 					}
 				}
 				else if(AuthComponent::user('role') == "client") {
 					if ($order['Order']['state'] == "ODDANO") {
-						echo $this->Form->postLink('PREKLICI', array('action' => 'changeState', $order['Order']['id'], 'PREKLICI'));
+						echo $this->Form->postLink('PREKLIČI', array('action' => 'set_preklicano', $order['Order']['id']));
 					}
 				}
 			?>

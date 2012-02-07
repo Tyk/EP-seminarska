@@ -1,3 +1,6 @@
+<div class='actions'>
+	<?php echo $this->Html->link("back", array('controller' => 'home', 'action' => 'index'), array('class' =>'btn_back'));?> 
+</div>
 <div class="users form">
 <?php echo $this->Form->create('User');?>
 	<fieldset>

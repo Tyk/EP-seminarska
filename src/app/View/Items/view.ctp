@@ -1,7 +1,7 @@
 <div class='item_view'>
-	<div class='action_back'>
+	<div class='actions'>
 	<?php 
-		echo $this->Html->link("Back", array('controller' => 'items', 'action' => 'index'));
+		echo $this->Html->link("Back", array('controller' => 'items', 'action' => 'index'), array('class' =>'btn_back'));
 	?> 
 	</div>
 	<?php
@@ -18,7 +18,7 @@
 	<?php
 		if(AuthComponent::user('role') == 'client')
 		{	
-			echo $this->Html->link("buy", array('controller' => 'cart', 'action' => 'addto', $item['Item']['id']));
+			echo $this->Form->postLink("buy", array('controller' => 'cart', 'action' => 'add', $item['Item']['id'], 1));
 		}
 	?>
 </div>

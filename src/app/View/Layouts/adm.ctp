@@ -27,9 +27,15 @@ echo $scripts_for_layout
 			</div>
 		</div>
 		<div class="delim" />
-		<div id="flash">
-			<?php echo $this->Session->flash(); ?>
-		</div>
+		<?php
+			$tmpFlash = $this->Session->flash(); 
+			if ($tmpFlash != "")				
+			{			
+				echo "<div id='flash' >";
+				echo $tmpFlash;			
+				echo "</div>";
+			}
+		?>
 		<div id="content">
 			<div id="inner-content">	
 				<?php echo $content_for_layout ?>

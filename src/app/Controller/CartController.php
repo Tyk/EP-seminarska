@@ -83,8 +83,7 @@ class CartController extends AppController
 	{
 		$kosarica = array();
 		$this->Session->write("kosarica",$kosarica);
-		echo "ITEMS:";		
-		print_r($kosarica);
+		$this->redirect(array('controller' => 'cart', 'action' => 'index'));
 	}
 
 
